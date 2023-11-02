@@ -1,6 +1,6 @@
 NAME = zombie
 SRCS = main.cpp Zombie.cpp
-CPPFLAGS = -std=c++11 -Wall -Wextra -Werror
+CPPFLAGS = -std=c++98 -Wall -Wextra -Werror
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)

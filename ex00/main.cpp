@@ -1,17 +1,18 @@
 #include "Zombie.h"
 
 Zombie* newZombie( std::string name ) {
-	Zombie	*allocZombie = new Zombie(name);
-	return allocZombie;
+	return (new Zombie(name));
 }
 
 void randomChump( std::string name ) {
-	Zombie randzomb;
 	Zombie randomZombie(name);
 	randomZombie.announce();
 }
 
 int main() {
-	newZombie("Ashot");
-	randomChump("Bruno");
+	Zombie *MallocZombie = newZombie("Tom");
+	MallocZombie->announce();
+	randomChump("John");
+	delete MallocZombie;
+	return 0;
 }

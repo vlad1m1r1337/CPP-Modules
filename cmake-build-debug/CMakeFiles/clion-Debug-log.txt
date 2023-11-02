@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/3A7DBB1D-7FD0-4429-BB59-3FE3A679AEF0/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/3A7DBB1D-7FD0-4429-BB59-3FE3A679AEF0/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/vgribkov/Desktop/CPP01 -B /Users/vgribkov/Desktop/CPP01/cmake-build-debug
+/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/D02E1258-B42B-4BA4-A2F9-CC66B730F2E8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/D02E1258-B42B-4BA4-A2F9-CC66B730F2E8/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/vgribkov/Desktop/CPP01 -B /Users/vgribkov/Desktop/CPP01/cmake-build-debug
 -- The C compiler identification is AppleClang 11.0.0.11000033
 -- The CXX compiler identification is AppleClang 11.0.0.11000033
 -- Detecting C compiler ABI info
@@ -11,6 +11,6 @@
 -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (1.6s)
+-- Configuring done (5.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/vgribkov/Desktop/CPP01/cmake-build-debug
