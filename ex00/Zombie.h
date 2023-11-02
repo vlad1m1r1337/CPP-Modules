@@ -9,10 +9,8 @@ private:
 	std::string _name;
 public:
 	Zombie(std::string p_name);
-	Zombie();
 	~Zombie();
 	void	announce();
-//	Zombie* newZombie( std::string name );
 };
 
 

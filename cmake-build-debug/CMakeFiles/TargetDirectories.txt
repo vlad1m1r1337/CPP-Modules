@@ -1,3 +1,0 @@
-/Users/vgribkov/Desktop/CPP01/cmake-build-debug/CMakeFiles/CPP01.dir
-/Users/vgribkov/Desktop/CPP01/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/vgribkov/Desktop/CPP01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
