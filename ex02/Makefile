@@ -1,16 +1,17 @@
 NAME = hi
 SRCS = main.cpp
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CPP = c++
+CPPFLAGS = -Wall -Wextra -Werror
 OBJS = $(SRCS:.cpp=.o)
 HEADER = Zombie.h
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CPPFLAGS) -o $@ $^
+	$(CPP) $(CPPFLAGS) -o $@ $^
 
 %.o: %.cpp $(HEADER)
-	$(CXX) $(CPPFLAGS) -c $< -o $@
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJS)
