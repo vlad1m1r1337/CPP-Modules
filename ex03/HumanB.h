@@ -7,7 +7,7 @@
 //class HumanB {
 //private:
 //	std::string _name;
-//	Weapon _weapon_type;
+//	Weapon *_weapon_type;
 //public:
 //	attack();
 //};

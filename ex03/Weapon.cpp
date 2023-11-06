@@ -1,10 +1,10 @@
 #include "Weapon.h"
 
-Weapon::Weapon(std::string weapon) {
+Weapon::Weapon(std::string weapon) : _type(weapon) {
     std::cout << "Constructor weapon " << weapon << " called" << std::endl;
 }
 
-const std::string& Weapon::getType() const {
+const std::string &Weapon::getType() const {
 	return (this->_type);
 }
 
