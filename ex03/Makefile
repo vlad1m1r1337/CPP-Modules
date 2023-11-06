@@ -3,7 +3,7 @@ SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = HumanA.h HumanB.h Weapon.h
+HEADERS = HumanA.h Weapon.h
 
 all: $(NAME)
 
