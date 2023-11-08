@@ -1,6 +1,2 @@
-#Clion
-.idea
-cmake-build-debug
-CMakeLists.txt
 #Obj
 *.o

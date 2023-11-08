@@ -1,35 +1,3 @@
-//#include "iomanip"
-//#include "iostream"
-//#include "fstream"
-//
-//std::string reader(char *s) {
-//	std::string str(s);
-//	std::ifstream in;
-//	in.open(str);
-//
-//}
-//
-//int main(int argc, char **argv) {
-//	if (argc != 4)
-//	{
-//		std::cout << "Wrong arguments" << std::endl;
-//		return 1;
-//	}
-//	std::string content = reader(argv[1]);
-//	return 0;
-//}
-//
-////#include <iostream>
-////#include <fstream>
-////#include <string>
-////
-////std::string reader(char *s) {
-////	std::string str(s);
-////	return str;
-////}
-////
-
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -38,7 +6,7 @@ std::string reader(char *s) {
 	std::string str(s);
 	std::string line;
 	std::string content;
-	std::ifstream in(str);
+	std::ifstream in(s);
 	if (in.is_open())
 	{
 		while (std::getline(in, line))
@@ -48,21 +16,34 @@ std::string reader(char *s) {
 	return content;
 }
 
-void writer(std::string content, char *file, char *substring, char *string) {
-	(void)content;
+void writer(std::string content, char *file, char *occurrence, char *changer) {
 	std::string out_file(file);
-	std::string substr(substring);
-	std::string str(string);
-	std::ofstream out(out_file + ".replace");
-	bool found = string.find(substring) != std::string::npos;
-
+	std::string occur(occurrence);
+	std::string change(changer);
+	std::ofstream out((out_file + ".replace").c_str());
+    unsigned long long i = 0;
+    while(content[i] != '\0') {
+        if (content.find(occur, i) != std::string::npos && content.substr(i, occur.length()) == occur) {
+            out << change;
+            i += occur.length();
+            std::cout << "i: " << i << std::endl;
+        }
+        else {
+            out << content[i];
+            i += 1;
+        }
+    }
 }
 
 int main(int argc, char **argv) {
-	(void)argc;
+    if (argc != 4)
+    {
+        std::cout << "Wrong arguments" << std::endl;
+        return 1;
+    }
 	std::string content;
 	content = reader(argv[1]);
 	std::cout << content << std::endl;
-	writer(content, argv[1]);
+	writer(content, argv[1], argv[2], argv[3]);
 	return 0;
 }

@@ -1,7 +1,1 @@
-Hello, world!
-assdf
-asf
-safs
-asd
-s
-da
+lock
