@@ -2,7 +2,6 @@
 #define CPP01_HUMANA_H
 
 # include "Weapon.h"
-# include "iomanip"
 # include "iostream"
 
 class HumanA {

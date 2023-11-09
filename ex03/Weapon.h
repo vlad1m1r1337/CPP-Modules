@@ -3,6 +3,7 @@
 
 # include "iomanip"
 # include <iostream>
+
 class Weapon {
 private:
 	std::string _type;
