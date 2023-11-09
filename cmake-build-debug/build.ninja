@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: cpp01
+# Project: CPPModulesProject
 # Configurations: Debug
 # =============================================================================
 
@@ -39,46 +39,80 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Hasan/OneDrive/cpp01/cmake-build-debug/
+cmake_ninja_workdir = /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target cpp01
+# Object build statements for EXECUTABLE target CPPModulesProject
 
 
 #############################################
-# Order-only phony target for cpp01
+# Order-only phony target for CPPModulesProject
 
-build cmake_object_order_depends_target_cpp01: phony || CMakeFiles/cpp01.dir
+build cmake_object_order_depends_target_CPPModulesProject: phony || CMakeFiles/CPPModulesProject.dir
 
-build CMakeFiles/cpp01.dir/ex04/main.cpp.obj: CXX_COMPILER__cpp01_unscanned_Debug C$:/Users/Hasan/OneDrive/cpp01/ex04/main.cpp || cmake_object_order_depends_target_cpp01
-  DEP_FILE = CMakeFiles\cpp01.dir\ex04\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\cpp01.dir
-  OBJECT_FILE_DIR = CMakeFiles\cpp01.dir\ex04
+build CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanA.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP01/ex03/HumanA.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanA.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP01/ex03
+
+build CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanB.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP01/ex03/HumanB.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanB.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP01/ex03
+
+build CMakeFiles/CPPModulesProject.dir/CPP01/ex03/main.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP01/ex03/main.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP01/ex03/main.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP01/ex03
+
+build CMakeFiles/CPPModulesProject.dir/CPP01/ex03/Weapon.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP01/ex03/Weapon.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP01/ex03/Weapon.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP01/ex03
+
+build CMakeFiles/CPPModulesProject.dir/CPP01/ex05/Harl.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP01/ex05/Harl.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP01/ex05/Harl.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP01/ex05
+
+build CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP02/ex00/main.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP02/ex00
+
+build CMakeFiles/CPPModulesProject.dir/CPP02/ex00/Fixed.cpp.o: CXX_COMPILER__CPPModulesProject_unscanned_Debug /Users/vgribkov/Desktop/CPPModulesProject/CPP02/ex00/Fixed.cpp || cmake_object_order_depends_target_CPPModulesProject
+  DEP_FILE = CMakeFiles/CPPModulesProject.dir/CPP02/ex00/Fixed.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/CPPModulesProject.dir/CPP02/ex00
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target cpp01
+# Link build statements for EXECUTABLE target CPPModulesProject
 
 
 #############################################
-# Link the executable cpp01.exe
+# Link the executable CPPModulesProject
 
-build cpp01.exe: CXX_EXECUTABLE_LINKER__cpp01_Debug CMakeFiles/cpp01.dir/ex04/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\cpp01.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = cpp01.exe
-  TARGET_IMPLIB = libcpp01.dll.a
-  TARGET_PDB = cpp01.exe.dbg
+build CPPModulesProject: CXX_EXECUTABLE_LINKER__CPPModulesProject_Debug CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanA.cpp.o CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanB.cpp.o CMakeFiles/CPPModulesProject.dir/CPP01/ex03/main.cpp.o CMakeFiles/CPPModulesProject.dir/CPP01/ex03/Weapon.cpp.o CMakeFiles/CPPModulesProject.dir/CPP01/ex05/Harl.cpp.o CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.o CMakeFiles/CPPModulesProject.dir/CPP02/ex00/Fixed.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14
+  OBJECT_DIR = CMakeFiles/CPPModulesProject.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CPPModulesProject
+  TARGET_PDB = CPPModulesProject.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Hasan\OneDrive\cpp01\cmake-build-debug && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cd /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug && /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +123,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Hasan\OneDrive\cpp01\cmake-build-debug && "D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Hasan\OneDrive\cpp01 -BC:\Users\Hasan\OneDrive\cpp01\cmake-build-debug"
+  COMMAND = cd /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug && /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/vgribkov/Desktop/CPPModulesProject -B/Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -99,17 +133,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build cpp01: phony cpp01.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Hasan/OneDrive/cpp01/cmake-build-debug
+# Folder: /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug
 
-build all: phony cpp01.exe
+build all: phony CPPModulesProject
 
 # =============================================================================
 # Built-in targets
@@ -118,14 +150,14 @@ build all: phony cpp01.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/Hasan/OneDrive/cpp01/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | /Users/vgribkov/Desktop/CPPModulesProject/CMakeLists.txt /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Hasan/OneDrive/cpp01/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake: phony
+build /Users/vgribkov/Desktop/CPPModulesProject/CMakeLists.txt /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

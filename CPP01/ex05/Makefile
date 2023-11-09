@@ -1,9 +1,9 @@
 NAME = Harl
-SRCS = main.cpp
+SRCS = main.cpp Harl.cpp
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror  -std=c++98
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = HumanA.h Weapon.h
+HEADERS = Harl.h
 
 all: $(NAME)
 

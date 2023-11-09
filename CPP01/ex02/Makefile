@@ -1,7 +1,7 @@
 NAME = hi
 SRCS = main.cpp
 CPP = c++
-CPPFLAGS = -Wall -Wextra -Werror
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 OBJS = $(SRCS:.cpp=.o)
 HEADER = Zombie.h
 

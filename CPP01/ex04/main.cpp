@@ -26,7 +26,6 @@ void writer(std::string content, char *file, char *occurrence, char *changer) {
         if (content.find(occur, i) != std::string::npos && content.substr(i, occur.length()) == occur) {
             out << change;
             i += occur.length();
-            std::cout << "i: " << i << std::endl;
         }
         else {
             out << content[i];
@@ -43,7 +42,6 @@ int main(int argc, char **argv) {
     }
 	std::string content;
 	content = reader(argv[1]);
-	std::cout << content << std::endl;
 	writer(content, argv[1], argv[2], argv[3]);
 	return 0;
 }
