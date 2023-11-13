@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
+
 
 std::string reader(char *s) {
 	std::string str(s);
@@ -12,6 +14,11 @@ std::string reader(char *s) {
 		while (std::getline(in, line))
 			content += line + "\n";
 	}
+    else
+    {
+        std::cout << "Failed to open file" << std::endl;
+        exit(1);
+    }
 	in.close();
 	return content;
 }
@@ -32,6 +39,7 @@ void writer(std::string content, char *file, char *occurrence, char *changer) {
             i += 1;
         }
     }
+    out.close();
 }
 
 int main(int argc, char **argv) {

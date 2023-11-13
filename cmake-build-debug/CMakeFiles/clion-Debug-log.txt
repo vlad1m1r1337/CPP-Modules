@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6C2B1501-6333-42E8-A231-9CD5BEA42579/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/vgribkov/Desktop/CPPModulesProject -B /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/vgribkov/Desktop/CPPModulesProject/cmake-build-debug
+"D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Hasan\OneDrive\CPP-Modules -B C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/Hasan/OneDrive/CPP-Modules/cmake-build-debug
