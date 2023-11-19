@@ -11,6 +11,7 @@ public:
 	Fixed();
 	~Fixed();
 	Fixed(const Fixed& OtherFixed);
+    Fixed& operator = (const Fixed &other);
 	int getRawBits( void ) const;
 	void setRawBits( int const raw );
 };
