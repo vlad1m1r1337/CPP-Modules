@@ -2,7 +2,7 @@
 #define CPP01_HARL_H
 
 #include "iostream"
-
+#include <cstdlib>
 
 class Harl {
 private:
@@ -15,6 +15,5 @@ public:
 	Harl();
     void complain(std::string level);
 };
-
 
 #endif

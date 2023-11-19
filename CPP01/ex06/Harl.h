@@ -2,6 +2,7 @@
 #define CPP01_HARL_H
 
 #include "iostream"
+#include <cstdlib>
 
 class Harl {
 private:

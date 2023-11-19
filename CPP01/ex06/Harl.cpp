@@ -34,5 +34,8 @@ void Harl::complain(std::string level) {
 			warning();
 		case 4 :
 			error();
+        default:
+            std::cout << "No complains" << std::endl;
+            break;
 	}
 }

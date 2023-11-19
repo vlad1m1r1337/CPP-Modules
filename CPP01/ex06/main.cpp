@@ -2,5 +2,5 @@
 
 int main() {
     Harl harl;
-    harl.complain("4");
+    harl.complain("1");
 }

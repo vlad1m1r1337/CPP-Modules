@@ -21,18 +21,20 @@ std::cout << "This is unacceptable! I want to speak to the manager now" << std::
 }
 
 void Harl::complain(std::string level) {
-	switch (atoi(level.c_str())) {
+    int num_level = atoi(level.c_str());
+    void (Harl::*arr_complain[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	switch (num_level) {
 		case 1 :
-			debug();
+			(this->*arr_complain[0])();
 			break;
 		case 2 :
-			info();
-			break;
+            (this->*arr_complain[1])();
+            break;
 		case 3 :
-			warning();
-			break;
+            (this->*arr_complain[2])();
+            break;
 		case 4 :
-			error();
-			break;
+            (this->*arr_complain[3])();
+            break;
 	}
 }
