@@ -27,6 +27,10 @@ void writer(std::string content, char *file, char *occurrence, char *changer) {
 	std::string out_file(file);
 	std::string occur(occurrence);
 	std::string change(changer);
+    if (occur.empty() || change.empty() ){
+        std::cout << "Empty variable" << std::endl;
+        exit(1);
+    }
 	std::ofstream out((out_file + ".replace").c_str());
     unsigned long long i = 0;
     while(content[i] != '\0') {
