@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP02/ex00/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/ClapTrap.cpp" "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.obj"
-  "CMakeFiles/CPPModulesProject.dir/CPP02/ex00/main.cpp.obj.d"
+  "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.obj"
+  "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.obj.d"
+  "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.obj"
+  "CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.obj.d"
   "CPPModulesProject.exe"
   "CPPModulesProject.exe.manifest"
   "CPPModulesProject.pdb"

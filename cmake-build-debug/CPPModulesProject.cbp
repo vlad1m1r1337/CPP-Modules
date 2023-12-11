@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP02/ex00/main.cpp">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/ClapTrap.cpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/ClapTrap.h">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/main.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CMakeLists.txt">
