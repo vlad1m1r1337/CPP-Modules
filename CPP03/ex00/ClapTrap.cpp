@@ -1,13 +1,17 @@
 #include "ClapTrap.h"
 
-ClapTrap::ClapTrap(std::string name) : _hp(10), _stamina(10), _dmg(10) {
+ClapTrap::ClapTrap(std::string name) : _hp(10), _stamina(1), _dmg(10) {
     _name = name;
     std::cout << "Constructor for " << _name << " was called" << std::endl;
 }
 
+ClapTrap::~ClapTrap() {
+    std::cout << "Destructor for " << _name << " was called" << std::endl;
+}
+
 void ClapTrap::attack(const std::string& target) {
     if (_stamina <= 0) {
-        std::cout << "No stamina" << std::endl;
+        std::cout << "No stamina for attack" << std::endl;
         return;
     }
     _stamina--;
@@ -16,7 +20,7 @@ void ClapTrap::attack(const std::string& target) {
 
 void ClapTrap::beRepaired(unsigned int amount) {
     if (_stamina <= 0) {
-        std::cout << "No stamina" << std::endl;
+        std::cout << "No stamina for repairing" << std::endl;
         return ;
     }
     std::cout << "ClapTrap " << _name << " repaires " << amount << " hp" << std::endl;
@@ -32,3 +36,4 @@ void ClapTrap::takeDamage(unsigned int amount) {
     std::cout << "ClapTrap " << _name << " takes " << amount << " damage" << std::endl;
     _hp = _hp - amount;
 }
+

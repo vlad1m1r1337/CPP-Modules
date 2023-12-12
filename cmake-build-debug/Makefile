@@ -128,53 +128,77 @@ CPPModulesProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/build
 .PHONY : CPPModulesProject/fast
 
-CPP03/ex00/ClapTrap.obj: CPP03/ex00/ClapTrap.cpp.obj
-.PHONY : CPP03/ex00/ClapTrap.obj
+CPP03/ex01/ClapTrap.obj: CPP03/ex01/ClapTrap.cpp.obj
+.PHONY : CPP03/ex01/ClapTrap.obj
 
 # target to build an object file
-CPP03/ex00/ClapTrap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.obj
-.PHONY : CPP03/ex00/ClapTrap.cpp.obj
+CPP03/ex01/ClapTrap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj
+.PHONY : CPP03/ex01/ClapTrap.cpp.obj
 
-CPP03/ex00/ClapTrap.i: CPP03/ex00/ClapTrap.cpp.i
-.PHONY : CPP03/ex00/ClapTrap.i
+CPP03/ex01/ClapTrap.i: CPP03/ex01/ClapTrap.cpp.i
+.PHONY : CPP03/ex01/ClapTrap.i
 
 # target to preprocess a source file
-CPP03/ex00/ClapTrap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.i
-.PHONY : CPP03/ex00/ClapTrap.cpp.i
+CPP03/ex01/ClapTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.i
+.PHONY : CPP03/ex01/ClapTrap.cpp.i
 
-CPP03/ex00/ClapTrap.s: CPP03/ex00/ClapTrap.cpp.s
-.PHONY : CPP03/ex00/ClapTrap.s
+CPP03/ex01/ClapTrap.s: CPP03/ex01/ClapTrap.cpp.s
+.PHONY : CPP03/ex01/ClapTrap.s
 
 # target to generate assembly for a file
-CPP03/ex00/ClapTrap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/ClapTrap.cpp.s
-.PHONY : CPP03/ex00/ClapTrap.cpp.s
+CPP03/ex01/ClapTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.s
+.PHONY : CPP03/ex01/ClapTrap.cpp.s
 
-CPP03/ex00/main.obj: CPP03/ex00/main.cpp.obj
-.PHONY : CPP03/ex00/main.obj
+CPP03/ex01/ScavTrap.obj: CPP03/ex01/ScavTrap.cpp.obj
+.PHONY : CPP03/ex01/ScavTrap.obj
 
 # target to build an object file
-CPP03/ex00/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.obj
-.PHONY : CPP03/ex00/main.cpp.obj
+CPP03/ex01/ScavTrap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj
+.PHONY : CPP03/ex01/ScavTrap.cpp.obj
 
-CPP03/ex00/main.i: CPP03/ex00/main.cpp.i
-.PHONY : CPP03/ex00/main.i
+CPP03/ex01/ScavTrap.i: CPP03/ex01/ScavTrap.cpp.i
+.PHONY : CPP03/ex01/ScavTrap.i
 
 # target to preprocess a source file
-CPP03/ex00/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.i
-.PHONY : CPP03/ex00/main.cpp.i
+CPP03/ex01/ScavTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.i
+.PHONY : CPP03/ex01/ScavTrap.cpp.i
 
-CPP03/ex00/main.s: CPP03/ex00/main.cpp.s
-.PHONY : CPP03/ex00/main.s
+CPP03/ex01/ScavTrap.s: CPP03/ex01/ScavTrap.cpp.s
+.PHONY : CPP03/ex01/ScavTrap.s
 
 # target to generate assembly for a file
-CPP03/ex00/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex00/main.cpp.s
-.PHONY : CPP03/ex00/main.cpp.s
+CPP03/ex01/ScavTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.s
+.PHONY : CPP03/ex01/ScavTrap.cpp.s
+
+CPP03/ex01/main.obj: CPP03/ex01/main.cpp.obj
+.PHONY : CPP03/ex01/main.obj
+
+# target to build an object file
+CPP03/ex01/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj
+.PHONY : CPP03/ex01/main.cpp.obj
+
+CPP03/ex01/main.i: CPP03/ex01/main.cpp.i
+.PHONY : CPP03/ex01/main.i
+
+# target to preprocess a source file
+CPP03/ex01/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.i
+.PHONY : CPP03/ex01/main.cpp.i
+
+CPP03/ex01/main.s: CPP03/ex01/main.cpp.s
+.PHONY : CPP03/ex01/main.s
+
+# target to generate assembly for a file
+CPP03/ex01/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.s
+.PHONY : CPP03/ex01/main.cpp.s
 
 # Help Target
 help:
@@ -185,12 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CPPModulesProject
-	@echo ... CPP03/ex00/ClapTrap.obj
-	@echo ... CPP03/ex00/ClapTrap.i
-	@echo ... CPP03/ex00/ClapTrap.s
-	@echo ... CPP03/ex00/main.obj
-	@echo ... CPP03/ex00/main.i
-	@echo ... CPP03/ex00/main.s
+	@echo ... CPP03/ex01/ClapTrap.obj
+	@echo ... CPP03/ex01/ClapTrap.i
+	@echo ... CPP03/ex01/ClapTrap.s
+	@echo ... CPP03/ex01/ScavTrap.obj
+	@echo ... CPP03/ex01/ScavTrap.i
+	@echo ... CPP03/ex01/ScavTrap.s
+	@echo ... CPP03/ex01/main.obj
+	@echo ... CPP03/ex01/main.i
+	@echo ... CPP03/ex01/main.s
 .PHONY : help
 
 

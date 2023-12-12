@@ -82,13 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/ClapTrap.cpp">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ClapTrap.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/ClapTrap.h">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ClapTrap.h">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex00/main.cpp">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ScavTrap.cpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ScavTrap.h">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/main.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CMakeLists.txt">
