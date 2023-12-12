@@ -34,7 +34,7 @@ void ClapTrap::setterStamina(int stamina) {
 
 
 int ClapTrap::getterDmg() {
-    return _stamina;
+    return _dmg;
 }
 
 void ClapTrap::setterDmg(int dmg) {

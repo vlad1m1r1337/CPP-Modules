@@ -68,65 +68,113 @@ include CMakeFiles/CPPModulesProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPPModulesProject.dir/flags.make
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ClapTrap.cpp
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ClapTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ClapTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ClapTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex02/FragTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex02\FragTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\FragTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\FragTrap.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.i"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ClapTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ClapTrap.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\FragTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex02\FragTrap.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.s"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ClapTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ClapTrap.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\FragTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\FragTrap.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/main.cpp
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex01\main.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\main.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex02/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex02\main.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\main.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\main.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.i"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\main.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex01\main.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\main.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex02\main.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.s"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\main.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\main.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\main.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\main.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex01/ScavTrap.cpp
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ScavTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ScavTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ScavTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex02/ClapTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ClapTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ClapTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ClapTrap.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.i"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ScavTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ScavTrap.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ClapTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ClapTrap.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.s"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex01\ScavTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex01\ScavTrap.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ClapTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ClapTrap.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex02/ScavTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ScavTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ScavTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ScavTrap.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ScavTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ScavTrap.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex02\ScavTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex02\ScavTrap.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex03/DiamondTrap.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex03\DiamondTrap.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex03\DiamondTrap.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\DiamondTrap.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\DiamondTrap.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex03\DiamondTrap.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\DiamondTrap.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex03\DiamondTrap.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP03/ex03/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP03\ex03\main.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP03\ex03\main.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\main.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\main.cpp > CMakeFiles\CPPModulesProject.dir\CPP03\ex03\main.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP03\ex03\main.cpp -o CMakeFiles\CPPModulesProject.dir\CPP03\ex03\main.cpp.s
 
 # Object files for target CPPModulesProject
 CPPModulesProject_OBJECTS = \
-"CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj" \
-"CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj" \
-"CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj"
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj"
 
 # External object files for target CPPModulesProject
 CPPModulesProject_EXTERNAL_OBJECTS =
 
-CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ClapTrap.cpp.obj
-CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex01/main.cpp.obj
-CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex01/ScavTrap.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex02/FragTrap.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex02/main.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ClapTrap.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex02/ScavTrap.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex03/DiamondTrap.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP03/ex03/main.cpp.obj
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/build.make
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/linkLibs.rsp
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/objects1.rsp
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CPPModulesProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable CPPModulesProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPPModulesProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
