@@ -1,5 +1,7 @@
 #include "Fixed.h"
 
+const int Fixed::_st_const_int = 8;
+
 Fixed::Fixed() {
     _integer = 0;
 	std::cout << "Default constructor called" << std::endl;
