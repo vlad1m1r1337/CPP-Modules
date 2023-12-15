@@ -1,7 +1,3 @@
-//
-// Created by Hasan on 11.12.2023.
-//
-
 #ifndef CPPMODULESPROJECT_CLAPTRAP_H
 #define CPPMODULESPROJECT_CLAPTRAP_H
 
@@ -20,6 +16,10 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
 
+	ClapTrap();
+	
+	ClapTrap(const ClapTrap &copy);
+	ClapTrap& operator=(const ClapTrap &other);
 };
 
-#endif //CPPMODULESPROJECT_CLAPTRAP_H
+#endif

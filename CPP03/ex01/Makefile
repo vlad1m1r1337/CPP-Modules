@@ -1,9 +1,9 @@
 NAME = ex01
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ScavTrap.cpp ClapTrap.cpp
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror  -std=c++98
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = Harl.h
+HEADERS = ScavTrap.h
 
 all: $(NAME)
 

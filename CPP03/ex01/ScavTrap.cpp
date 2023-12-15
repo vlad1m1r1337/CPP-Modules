@@ -2,15 +2,15 @@
 #include "ScavTrap.h"
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name){
-    setterName(name);
-    setterHP(100);
-    setterStamina(50);
-    setterDmg(20);
+    _name = name;
+    _hp = 100;
+    _stamina = 50;
+    _dmg = 20;
     std::cout << "ScavTrap Constructor for " << name << " was called" << std::endl;
 }
 
 ScavTrap::~ScavTrap() {
-    std::cout << "ScavTrap Constructor for was called" << std::endl;
+    std::cout << "ScavTrap Constructor was called" << std::endl;
 }
 
 void ScavTrap::guardGate() {

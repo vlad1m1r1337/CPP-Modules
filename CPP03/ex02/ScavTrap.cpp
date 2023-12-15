@@ -10,7 +10,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name){
 }
 
 ScavTrap::~ScavTrap() {
-    std::cout << "ScavTrap Constructor for was called" << std::endl;
+    std::cout << "ScavTrap Constructor was called" << std::endl;
 }
 
 void ScavTrap::guardGate() {

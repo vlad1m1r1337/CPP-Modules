@@ -4,7 +4,7 @@
 #include "ClapTrap.h"
 #include "ScavTrap.h"
 
-class FragTrap : public ScavTrap{
+class FragTrap : public ClapTrap {
 public:
     FragTrap(std::string name);
     ~FragTrap();

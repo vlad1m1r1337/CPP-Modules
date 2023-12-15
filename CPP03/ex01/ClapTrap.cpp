@@ -43,6 +43,10 @@ void ClapTrap::setterDmg(int dmg) {
 
 
 void ClapTrap::attack(const std::string& target) {
+	if (_hp <= 0) {
+		std::cout << "Claptrap is already death" << std::endl;
+		return ;
+	}
     if (_stamina <= 0) {
         std::cout << "No stamina for attack" << std::endl;
         return;
@@ -52,6 +56,10 @@ void ClapTrap::attack(const std::string& target) {
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
+	if (_hp <= 0) {
+		std::cout << "Claptrap is already death" << std::endl;
+		return ;
+	}
     if (_stamina <= 0) {
         std::cout << "No stamina for repairing" << std::endl;
         return ;
@@ -70,3 +78,16 @@ void ClapTrap::takeDamage(unsigned int amount) {
     _hp = _hp - amount;
 }
 
+ClapTrap::ClapTrap(const ClapTrap &copy) {
+    *this = copy;
+    std::cout << "Copy constructor is called" << std::endl;
+}
+
+ClapTrap& ClapTrap::operator=(const ClapTrap &other) {
+    std::cout << "ClapTrap assignation operator called" << std::endl;
+    this->_name = other._name;
+    this->_hp = other._hp;
+    this->_stamina = other._stamina;
+    this->_dmg = other._dmg;
+    return (*this);
+}

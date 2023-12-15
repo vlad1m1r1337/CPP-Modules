@@ -8,7 +8,7 @@
 #include "iostream"
 
 class ClapTrap {
-private:
+protected:
     std::string _name;
     int _hp;
     int _stamina;
@@ -27,6 +27,8 @@ public:
     void setterStamina(int hp);
     int getterDmg();
     void setterDmg(int hp);
+	ClapTrap(const ClapTrap &copy);
+	ClapTrap& operator=(const ClapTrap &other);
 };
 
 #endif
