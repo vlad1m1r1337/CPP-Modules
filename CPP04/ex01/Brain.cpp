@@ -1,6 +1,11 @@
 #include "Brain.h"
 
+string Brain::getIdea(int index) {
+    return ideas[index];
+}
+
 Brain::Brain() {
+    ideas[0] = "lol";
 	cout << "Brain constructor called" << endl;
 }
 

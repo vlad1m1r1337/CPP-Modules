@@ -1,6 +1,8 @@
 #ifndef CPPMODULESPROJECT_ANIMAL_H
 #define CPPMODULESPROJECT_ANIMAL_H
 
+# define ARR_SIZE 10
+
 #include "iostream"
 using std::cout;
 using std::endl;

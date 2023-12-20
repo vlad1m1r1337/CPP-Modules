@@ -1,9 +1,9 @@
 NAME = ex01
-SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror  -std=c++98
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = Animal.h Dog.h Cat.h WrongAnimal.h WrongCat.h
+HEADERS = Animal.h Dog.h Cat.h WrongAnimal.h WrongCat.h Brain.h
 
 all: $(NAME)
 

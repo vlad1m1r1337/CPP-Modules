@@ -4,12 +4,14 @@ void Cat::makeSound() const {
 	std::cout << "meow" << std::endl;
 }
 
-Cat::Cat() {
+Cat::Cat() : Animal() {
 	type = "cat";
+    brain = new Brain();
 	std::cout << "Cat constructor was called" << std::endl;
 }
 
 Cat::~Cat() {
+    delete brain;
 	std::cout << "Cat destructor was called" << std::endl;
 }
 
@@ -22,7 +24,7 @@ Cat& Cat::operator=(const Cat &other) {
 	return *this;
 }
 
-Cat::Cat(const Cat &copy) {
+Cat::Cat(const Cat &copy) : Animal() {
 	std::cout << "Copy constructor is called" << std::endl;
 	this->type = copy.type;
 }

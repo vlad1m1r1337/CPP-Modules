@@ -2,8 +2,11 @@
 #define CPPMODULESPROJECT_DOG_H
 
 #include "Animal.h"
+#include "Brain.h"
 
 class Dog : public Animal {
+private:
+    Brain *brain;
 public:
 	void makeSound() const;
 
