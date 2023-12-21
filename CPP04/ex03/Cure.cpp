@@ -1,20 +1,25 @@
-#include "Ice.hpp"
+#include "Cure.hpp"
 
-Ice::Ice() {
-	_type = "Ice";
+Cure* Cure::clone() const {
+	Cure* cure = new Cure();
+	return cure;
+}
+
+Cure::Cure() {
+		_type = "Cure";
 	cout << "Ice Constructor was called" << endl;
 }
 
-Ice::~Ice() {
+Cure::~Cure() {
 	cout << "Ice Destructor was called" << endl;
 }
 
-Ice::Ice(const Ice &copy) {
+Cure::Cure(const Cure &copy) {
 	std::cout << "Copy constructor is called" << std::endl;
 	*this = copy;
 }
 
-Ice& Ice::operator=(const Ice &other) {
+Cure& Cure::operator=(const Cure &other) {
 	std::cout << "Assignation operator called" << std::endl;
 	if (&other != this) {
 		this->_type = other._type;

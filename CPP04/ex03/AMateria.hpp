@@ -13,13 +13,14 @@ protected:
 public:
 	AMateria(string const & type);
 	string const & getType() const; //Returns the materia type
-//	virtual AMateria* clone() const = 0;
-//	virtual void use(ICharacter& target);
+	virtual AMateria* clone() const = 0;
 
 	AMateria();
-	~AMateria();
+	virtual ~AMateria();
 	AMateria(const AMateria& copy);
 	AMateria& operator=(const AMateria& other);
+
+//	virtual void use(ICharacter& target);
 };
 
 

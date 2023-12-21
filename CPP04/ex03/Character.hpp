@@ -12,6 +12,7 @@ using std::endl;
 
 class Character : public ICharacter {
 public:
+
 	Character();
 	~Character();
 	Character(const Character& copy);

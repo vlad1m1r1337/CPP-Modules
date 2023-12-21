@@ -1,5 +1,9 @@
 #include "Character.hpp"
 
+void	Character::equip(AMateria *m) {
+	if ()
+}
+
 Character::Character() {
 	cout << "Character Constructor was called" << endl;
 }

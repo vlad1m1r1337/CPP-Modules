@@ -1,9 +1,9 @@
-NAME = ex04
-SRCS = main.cpp #AMateria.cpp ICaracter.cpp
+NAME = ex03
+SRCS = main.cpp AMateria.cpp Ice.cpp Cure.cpp
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror  -std=c++98
 OBJS = $(SRCS:.cpp=.o)
-HEADERS = AMateria.hpp ICaracter.hpp
+HEADERS = AMateria.hpp
 
 all: $(NAME)
 
