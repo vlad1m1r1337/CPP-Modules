@@ -6,7 +6,7 @@ Ice* Ice::clone() const {
 }
 
 Ice::Ice() {
-	_type = "Ice";
+	_type = "ice";
 	cout << "Ice Constructor was called" << endl;
 }
 

@@ -12,5 +12,4 @@ public:
 	virtual void use(int idx, ICharacter& target) = 0;
 };
 
-
 #endif

@@ -6,8 +6,8 @@ Cure* Cure::clone() const {
 }
 
 Cure::Cure() {
-		_type = "Cure";
-	cout << "Ice Constructor was called" << endl;
+	_type = "cure";
+	cout << "Cure Constructor was called" << endl;
 }
 
 Cure::~Cure() {
