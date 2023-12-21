@@ -15,7 +15,7 @@ Ice::~Ice() {
 	cout << "Ice Destructor was called" << endl;
 }
 
-Ice::Ice(const Ice &copy) {
+Ice::Ice(const Ice &copy) : AMateria(){
 	std::cout << "Copy constructor is called" << std::endl;
 	*this = copy;
 }
