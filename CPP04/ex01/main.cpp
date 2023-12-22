@@ -15,7 +15,7 @@ void deleting_arr(Animal *arr[ARR_SIZE]) {
     }
 }
 
-int main() {
+void run() {
 	Animal *arr[ARR_SIZE];
     for (int i = 0; i < ARR_SIZE / 2; i++) {
         arr[i] = new Dog();
@@ -26,11 +26,8 @@ int main() {
     cout << arr[4]->getType() << endl;
     cout << arr[8]->getType() << endl;
     deleting_arr(arr);
-    return 0;
 }
 
-//int main() {
-//    Brain brain;
-//
-//    cout << brain.getIdea(88) << endl;
-//}
+int main() {
+    run();
+}
