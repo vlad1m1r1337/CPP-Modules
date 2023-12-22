@@ -7,7 +7,7 @@ class WrongAnimal {
 protected:
 	std::string type;
 public:
-	virtual void makeSound() const;
+	void makeSound() const;
 	std::string getType() const ;
 	WrongAnimal();
 	virtual ~WrongAnimal();
