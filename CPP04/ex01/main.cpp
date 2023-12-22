@@ -26,8 +26,6 @@ int main() {
     cout << arr[4]->getType() << endl;
     cout << arr[8]->getType() << endl;
     deleting_arr(arr);
-    int *ptr = new int;
-    cout << ptr << endl;
     return 0;
 }
 

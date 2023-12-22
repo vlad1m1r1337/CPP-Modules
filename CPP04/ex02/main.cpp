@@ -32,7 +32,6 @@ int main() {
 }
 
 //int main() {
-//    Brain brain;
-//
-//    cout << brain.getIdea(88) << endl;
+//	Animal a;
+//    return 0;
 //}

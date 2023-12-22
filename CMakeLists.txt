@@ -4,12 +4,10 @@ project(CPPModulesProject)
 set(CMAKE_CXX_STANDARD 98)
 
 add_executable(CPPModulesProject
-        CPP03/ex02/FragTrap.cpp
-        CPP03/ex02/FragTrap.h
-        CPP03/ex02/main.cpp
-        CPP03/ex02/ClapTrap.cpp
-        CPP03/ex02/ScavTrap.cpp
-        CPP03/ex03/DiamondTrap.cpp
-        CPP03/ex03/DiamondTrap.h
-        CPP03/ex03/main.cpp
+        CPP04/ex03/main.cpp
+        CPP04/ex03/Ice.cpp
+        CPP04/ex03/AMateria.cpp
+        CPP04/ex03/Cure.cpp
+        CPP04/ex03/MateriaSource.cpp
+        CPP04/ex03/Character.cpp
 )
