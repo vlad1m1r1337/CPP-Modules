@@ -5,7 +5,7 @@
 #include "WrongAnimal.h"
 #include "WrongCat.h"
 
-int main() {
+void	run() {
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new  Cat();
@@ -26,4 +26,8 @@ int main() {
 	delete i;
 	delete wA;
 	delete wC;
+}
+
+int main() {
+	run();
 }

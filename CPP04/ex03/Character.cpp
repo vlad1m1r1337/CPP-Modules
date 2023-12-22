@@ -44,7 +44,7 @@ Character::Character(string name) {
 		slots[i] = NULL;
 	for (int i = 0; i < 4; i++)
 		ground[i] = NULL;
-	cout << "Character Constructor was called" << endl;
+//	cout << "Character Constructor was called" << endl;
 }
 
 Character::Character() {
@@ -52,24 +52,24 @@ Character::Character() {
 	for (int i = 0; i < 4; i ++) {
 		slots[i] = NULL;
 	}
-	cout << "Character Constructor was called" << endl;
+//	cout << "Character Constructor was called" << endl;
 }
 
 Character::~Character() {
 	for (int i = 0; i < 4; i ++) {
 		delete slots[i];
 	}
-	cout << "Character Destructor was called" << endl;
+//	cout << "Character Destructor was called" << endl;
 }
 
 Character::Character(const Character &copy) {
-	std::cout << "Copy constructor is called" << std::endl;
+//	std::cout << "Copy constructor is called" << std::endl;
 	*this = copy;
 }
 
 
 Character& Character::operator=(const Character &other) {
-	std::cout << "Assignation operator called" << std::endl;
+//	std::cout << "Assignation operator called" << std::endl;
 	if (&other != this) {
 		_name = other._name;
 		for (int i = 0; i < 4; ++i) {

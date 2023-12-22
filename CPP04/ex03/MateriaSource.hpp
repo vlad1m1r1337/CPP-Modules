@@ -14,7 +14,8 @@ public:
 
 	MateriaSource();
 	~MateriaSource();
-
+	MateriaSource(const MateriaSource& copy);
+	MateriaSource& operator=(const MateriaSource& other);
 	//TODO add operator = and copy constructor
 };
 

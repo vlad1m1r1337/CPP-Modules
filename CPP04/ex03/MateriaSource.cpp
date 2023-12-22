@@ -24,14 +24,27 @@ MateriaSource::~MateriaSource() {
 			delete slots[i];
 		}
 	}
-	cout << "MateriaSource destructor was called" << endl;
+//	cout << "MateriaSource destructor was called" << endl;
 }
 
 MateriaSource::MateriaSource() : count(0)  {
 	for (int i = 0; i < 4; i++) {
 		slots[i] = NULL;
 	}
-	cout << "MateriaSource constructor was called" << endl;
+//	cout << "MateriaSource constructor was called" << endl;
 }
 
+MateriaSource::MateriaSource(const MateriaSource& copy) {
+	*this = copy;
+}
 
+MateriaSource& MateriaSource::operator=(const MateriaSource& other) {
+	if (&other != this) {
+		for (int i = 0; i < 4; i++) {
+			slots[i] = other.slots[i];
+		}
+		count = other.count;
+		return (*this);
+	}
+	return *this;
+}
