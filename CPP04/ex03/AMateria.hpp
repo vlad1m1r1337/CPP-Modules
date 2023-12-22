@@ -2,6 +2,9 @@
 #define CPPMODULESPROJECT_AMATERIA_HPP
 
 #include "iostream"
+#include "ICharacter.hpp"
+class ICharacter;
+
 using std::cout;
 using std::string;
 using std::cin;
@@ -19,8 +22,7 @@ public:
 	virtual ~AMateria();
 	AMateria(const AMateria& copy);
 	AMateria& operator=(const AMateria& other);
-
-//	virtual void use(ICharacter& target);
+	virtual void use(ICharacter& target);
 };
 
 

@@ -25,7 +25,7 @@ public:
 	Character();
     virtual ~Character();
 	Character(const Character& copy);
-	//	Character& operator=(const Character& other);
+	Character& operator=(const Character& other);
 };
 
 

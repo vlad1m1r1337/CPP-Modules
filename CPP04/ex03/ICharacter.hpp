@@ -2,6 +2,9 @@
 #define CPPMODULESPROJECT_ICHARACTER_HPP
 
 #include "AMateria.hpp"
+#include "iostream"
+using std::string;
+class  AMateria;
 
 class ICharacter {
 public:

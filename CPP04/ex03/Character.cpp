@@ -27,14 +27,11 @@ void	Character::unequip(int idx) {
 }
 
 void Character::use(int idx, ICharacter& target) {
-	if (slots[idx]->getType() == "ice") {
-		cout << "* shoots an ice bolt at " << target.getName() << " *" << endl;
-	}
-	else if (slots[idx]->getType() == "cure") {
-		cout << "* heals " <<  target.getName() << " wounds *" << endl;
-	}
-	else
+	if(slots[idx] == NULL) {
 		cout << "Index or target not exist" << endl;
+		return;
+	}
+	slots[idx]->use(target);
 }
 
 string const & Character::getName() const{
@@ -70,11 +67,18 @@ Character::Character(const Character &copy) {
 	*this = copy;
 }
 
-//Character& Character::operator=(const Character &other) {
-//	std::cout << "Assignation operator called" << std::endl;
-//	if (&other != this) {
-//		this->_type = other._type;
-//		return (*this);
-//	}
-//	return *this;
-//}
+
+Character& Character::operator=(const Character &other) {
+	std::cout << "Assignation operator called" << std::endl;
+	if (&other != this) {
+		_name = other._name;
+		for (int i = 0; i < 4; ++i) {
+			slots[i] = other.slots[i];
+		}
+		for (int i = 0; i < 100; ++i) {
+			ground[i] = other.ground[i];
+		}
+		return (*this);
+	}
+	return *this;
+}

@@ -30,3 +30,7 @@ AMateria& AMateria::operator=(const AMateria &other) {
 	}
 	return *this;
 }
+
+void AMateria::use(ICharacter &target) {
+	(void) target;
+}

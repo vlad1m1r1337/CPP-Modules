@@ -11,6 +11,7 @@ public:
 	~Ice();
 	Ice(const Ice& copy);
 	Ice& operator=(const Ice& other);
+	virtual void use(ICharacter& target);
 };
 
 #endif

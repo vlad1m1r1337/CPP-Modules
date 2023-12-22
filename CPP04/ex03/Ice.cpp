@@ -28,3 +28,7 @@ Ice& Ice::operator=(const Ice &other) {
 	}
 	return *this;
 }
+
+void Ice::use(ICharacter &target) {
+	cout << "* shoots an ice bolt at " << target.getName() << " *" << endl;
+}

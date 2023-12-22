@@ -11,6 +11,7 @@ public:
 	~Cure();
 	Cure(const Cure& copy);
 	Cure& operator=(const Cure& other);
+	virtual void use(ICharacter& target);
 };
 
 #endif

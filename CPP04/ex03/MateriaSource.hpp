@@ -14,6 +14,8 @@ public:
 
 	MateriaSource();
 	~MateriaSource();
+
+	//TODO add operator = and copy constructor
 };
 
 #endif
