@@ -16,10 +16,10 @@ Cat::~Cat() {
 }
 
 Cat& Cat::operator=(const Cat &other) {
-	std::cout << "Assignation operator called" << std::endl;
+	std::cout << "Cat assignation operator called" << std::endl;
 	if (&other != this) {
-		this->brain = other.brain;
-		this->type = other.type;
+		std::cout << "Cat assignation operator called" << std::endl;
+		*this->brain = *other.brain;
 		return (*this);
 	}
 	return *this;
@@ -27,5 +27,7 @@ Cat& Cat::operator=(const Cat &other) {
 
 Cat::Cat(const Cat &copy) : Animal() {
 	std::cout << "Copy constructor is called" << std::endl;
-	this->type = copy.type;
+	type = "cat";
+	brain = new Brain();
+	*this = copy;
 }

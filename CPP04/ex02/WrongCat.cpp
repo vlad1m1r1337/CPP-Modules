@@ -25,4 +25,5 @@ WrongCat& WrongCat::operator=(const WrongCat &other) {
 WrongCat::WrongCat(const WrongCat &copy) : WrongAnimal() {
 	std::cout << "Copy constructor is called" << std::endl;
 	this->type = copy.type;
+	*this = copy;
 }

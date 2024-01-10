@@ -24,5 +24,5 @@ Cat& Cat::operator=(const Cat &other) {
 
 Cat::Cat(const Cat &copy) {
 	std::cout << "Copy constructor is called" << std::endl;
-	this->type = copy.type;
+	*this = copy;
 }

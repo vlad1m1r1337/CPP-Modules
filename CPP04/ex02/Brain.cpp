@@ -5,7 +5,6 @@ string Brain::getIdea(int index) {
 }
 
 Brain::Brain() {
-    ideas[0] = "lol";
 	cout << "Brain constructor called" << endl;
 }
 
@@ -28,5 +27,3 @@ Brain& Brain::operator=(const Brain &other) {
 	}
 	return (*this);
 }
-
-

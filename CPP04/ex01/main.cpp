@@ -1,16 +1,9 @@
 #include "Animal.h"
 #include "Cat.h"
 #include "Dog.h"
-#include <stdlib.h>
-
-#include "WrongAnimal.h"
-#include "WrongCat.h"
 
 void deleting_arr(Animal *arr[ARR_SIZE]) {
-    for (int i = 0; i < ARR_SIZE / 2; i++) {
-        delete arr[i];
-    }
-    for (int i = ARR_SIZE / 2; i < ARR_SIZE; i++) {
+    for (int i = 0; i < ARR_SIZE; i++) {
         delete arr[i];
     }
 }
@@ -30,4 +23,12 @@ void run() {
 
 int main() {
     run();
+	return 0;
 }
+
+//int main() {
+//	//Cat c;
+//	Cat c3;
+//	Cat c2(c3);
+//    return 0;
+//}

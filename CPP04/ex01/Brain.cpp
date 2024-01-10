@@ -5,7 +5,6 @@ string Brain::getIdea(int index) {
 }
 
 Brain::Brain() {
-    ideas[0] = "lol";
 	cout << "Brain constructor called" << endl;
 }
 
@@ -22,7 +21,7 @@ Brain::Brain(const Brain &copy) {
 }
 
 Brain& Brain::operator=(const Brain &other) {
-	std::cout << "Assignation operator called" << std::endl;
+	std::cout << "Brain assignation operator called" << std::endl;
 	for (int i = 0; i < 100; i++) {
 		this->ideas[i] = other.ideas[i];
 	}

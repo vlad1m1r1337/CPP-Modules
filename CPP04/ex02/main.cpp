@@ -6,16 +6,13 @@
 #include "WrongAnimal.h"
 #include "WrongCat.h"
 
-void deleting_arr(Animal *arr[ARR_SIZE]) {
-    for (int i = 0; i < ARR_SIZE / 2; i++) {
-        delete arr[i];
-    }
-    for (int i = ARR_SIZE / 2; i < ARR_SIZE; i++) {
+void deleting_arr(Animal **arr) {
+    for (int i = 0; i < ARR_SIZE; i++) {
         delete arr[i];
     }
 }
 
-int main() {
+void run() {
 	Animal *arr[ARR_SIZE];
     for (int i = 0; i < ARR_SIZE / 2; i++) {
         arr[i] = new Dog();
@@ -26,12 +23,10 @@ int main() {
     cout << arr[4]->getType() << endl;
     cout << arr[8]->getType() << endl;
     deleting_arr(arr);
-    int *ptr = new int;
-    cout << ptr << endl;
-    return 0;
 }
 
-//int main() {
-//	Animal a;
-//    return 0;
-//}
+int main () {
+    run();
+//    system("leaks ex02");
+    return 0;
+}
