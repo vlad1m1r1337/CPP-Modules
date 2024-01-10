@@ -18,7 +18,6 @@ AMateria::~AMateria() {
 }
 
 AMateria::AMateria(const AMateria &copy) {
-//	std::cout << "Copy constructor is called" << std::endl;
 	*this = copy;
 }
 

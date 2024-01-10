@@ -3,7 +3,7 @@
 void	Character::equip(AMateria *m) {
 	for (int i = 0; i < 4; i++) {
 		if (slots[i] == NULL) {
-			slots[i] = m;
+			slots[i] = m->clone();
 			cout << "Materia equiped succesfully" << endl;
 			return;
 		}
@@ -44,7 +44,6 @@ Character::Character(string name) {
 		slots[i] = NULL;
 	for (int i = 0; i < 4; i++)
 		ground[i] = NULL;
-//	cout << "Character Constructor was called" << endl;
 }
 
 Character::Character() {
@@ -52,14 +51,13 @@ Character::Character() {
 	for (int i = 0; i < 4; i ++) {
 		slots[i] = NULL;
 	}
-//	cout << "Character Constructor was called" << endl;
 }
 
 Character::~Character() {
 	for (int i = 0; i < 4; i ++) {
-		delete slots[i];
+		if (slots[i] != NULL)
+			delete slots[i];
 	}
-//	cout << "Character Destructor was called" << endl;
 }
 
 Character::Character(const Character &copy) {

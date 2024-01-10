@@ -29,5 +29,5 @@ Cure& Cure::operator=(const Cure &other) {
 }
 
 void Cure::use(ICharacter &target) {
-	cout << "* heals " <<  target.getName() << " wounds *" << endl;
+	cout << "* heals " <<  target.getName() << "\'s" << " wounds *" << endl;
 }
