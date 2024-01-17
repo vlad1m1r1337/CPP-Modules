@@ -1,0 +1,3 @@
+/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles/CPPModulesProject.dir
+/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles/rebuild_cache.dir
