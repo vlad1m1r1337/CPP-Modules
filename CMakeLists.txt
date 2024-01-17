@@ -10,4 +10,5 @@ add_executable(CPPModulesProject
         CPP04/ex03/Cure.cpp
         CPP04/ex03/MateriaSource.cpp
         CPP04/ex03/Character.cpp
+        CPP04/ex03/ICharacter.cpp
 )

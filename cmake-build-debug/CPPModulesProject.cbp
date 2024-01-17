@@ -98,6 +98,12 @@
 		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP04/ex03/Cure.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP04/ex03/ICharacter.cpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP04/ex03/ICharacter.hpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
 		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP04/ex03/Ice.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>

@@ -3,7 +3,7 @@
 std::ostream &operator<<(std::ostream &ostream, const Fixed &obj)
 {
 
-	std::cout << obj.toFloat();
+	ostream << obj.toFloat();
 	return ostream;
 }
 

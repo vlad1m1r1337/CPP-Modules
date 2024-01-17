@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/11D69A5F-0120-453E-9D7D-40CAC3F9BD36/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/B93660E6-1942-41FF-8BB9-681567FAE91C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/11D69A5F-0120-453E-9D7D-40CAC3F9BD36/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/B93660E6-1942-41FF-8BB9-681567FAE91C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/11D69A5F-0120-453E-9D7D-40CAC3F9BD36/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/B93660E6-1942-41FF-8BB9-681567FAE91C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/11D69A5F-0120-453E-9D7D-40CAC3F9BD36/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/B93660E6-1942-41FF-8BB9-681567FAE91C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -201,6 +201,30 @@ CPP04/ex03/Cure.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP04/ex03/Cure.cpp.s
 .PHONY : CPP04/ex03/Cure.cpp.s
 
+CPP04/ex03/ICharacter.o: CPP04/ex03/ICharacter.cpp.o
+.PHONY : CPP04/ex03/ICharacter.o
+
+# target to build an object file
+CPP04/ex03/ICharacter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP04/ex03/ICharacter.cpp.o
+.PHONY : CPP04/ex03/ICharacter.cpp.o
+
+CPP04/ex03/ICharacter.i: CPP04/ex03/ICharacter.cpp.i
+.PHONY : CPP04/ex03/ICharacter.i
+
+# target to preprocess a source file
+CPP04/ex03/ICharacter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP04/ex03/ICharacter.cpp.i
+.PHONY : CPP04/ex03/ICharacter.cpp.i
+
+CPP04/ex03/ICharacter.s: CPP04/ex03/ICharacter.cpp.s
+.PHONY : CPP04/ex03/ICharacter.s
+
+# target to generate assembly for a file
+CPP04/ex03/ICharacter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP04/ex03/ICharacter.cpp.s
+.PHONY : CPP04/ex03/ICharacter.cpp.s
+
 CPP04/ex03/Ice.o: CPP04/ex03/Ice.cpp.o
 .PHONY : CPP04/ex03/Ice.o
 
@@ -291,6 +315,9 @@ help:
 	@echo "... CPP04/ex03/Cure.o"
 	@echo "... CPP04/ex03/Cure.i"
 	@echo "... CPP04/ex03/Cure.s"
+	@echo "... CPP04/ex03/ICharacter.o"
+	@echo "... CPP04/ex03/ICharacter.i"
+	@echo "... CPP04/ex03/ICharacter.s"
 	@echo "... CPP04/ex03/Ice.o"
 	@echo "... CPP04/ex03/Ice.i"
 	@echo "... CPP04/ex03/Ice.s"
