@@ -20,24 +20,26 @@ const char* TooHighGrade::what() const throw()
     return message;
 }
 
-Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grade) {
-    cout << "\e[34mConstructor for " << _name << " was called\e[0m" << endl;
+void Bureaucrat::checkGrade() {
     try {
         if (_grade < 1) {
             throw TooHighGrade();
+        }
+        if (_grade > 150) {
+            throw TooLowGrade();
         }
     }
     catch (const TooHighGrade& error) {
         cout << error.what() << endl;
     }
-    try {
-        if (_grade > 150) {
-            throw TooLowGrade();
-        }
-    }
     catch (const TooLowGrade& err) {
         cout << err.what() << endl;
     }
+}
+
+Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grade) {
+    cout << "\e[34mConstructor for " << _name << " was called\e[0m" << endl;
+    checkGrade();
 }
 
 Bureaucrat::~Bureaucrat() {
@@ -58,6 +60,8 @@ int Bureaucrat::getGrade() const {
 
 void Bureaucrat::setGrade(int grade) {
     _grade = grade;
+    checkGrade();
+
 }
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)
