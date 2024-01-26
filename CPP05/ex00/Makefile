@@ -1,22 +1,21 @@
 NAME = ex00
-SRCS = main.cpp
+SRCS = main.cpp Bureaucrat.cpp
 OBJDIR = obj/
-OBJS = $(SRCS:%.c=$(OBJDIR)%.o)
+OBJS = $(SRCS:%.cpp=$(OBJDIR)%.o)
 CPP = c++
-CPPFLAGS = -Wall -Wextra -Werror  -std=c++98
-OBJS = $(SRCS:.cpp=.o)
-#HEADERS =
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+HEADER = Bureaucrat.hpp
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CPP) $(CPPFLAGS) -o $@ $^
-
-$(OBJDIR)%.o: %.cpp
-	@$(CCP) $(CFLAGS) $(OBJS) -o $@
+$(OBJDIR)%.o: %.cpp $(HEADER)
+	@$(CPP) $(CPPFLAGS) -c $< -o $@
 
 $(OBJDIR):
-	$(shell mkdir -p $(dir $(OBJS)))
+	$(shell mkdir -p $(dir $(OBJDIR)))
+
+$(NAME): $(OBJDIR) $(OBJS)
+	$(CPP) $(CPPFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	rm -rf $(OBJDIR)
