@@ -1,10 +1,10 @@
 NAME = ex00
-SRCS = main.cpp Bureaucrat.cpp
+SRCS = main.cpp Bureaucrat.cpp Form.cpp
 OBJDIR = obj/
 OBJS = $(SRCS:%.cpp=$(OBJDIR)%.o)
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-HEADER = Bureaucrat.hpp
+HEADER = Bureaucrat.hpp Form.hpp
 
 all: $(NAME)
 

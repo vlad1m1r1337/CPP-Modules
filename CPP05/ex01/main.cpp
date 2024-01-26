@@ -1,9 +1,8 @@
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 int main() {
-    Bureaucrat bur_error("Tom", 150);
-    cout << bur_error;
-    Bureaucrat bur_norm("Ed", -70);
-    cout << bur_norm;
-    return 0;
+    Bureaucrat bur("Tom", 30);
+    Form form("form");
+    form.beSigned(bur);
 }

@@ -33,6 +33,7 @@ class Bureaucrat {
 private:
     string _name;
     int _grade;
+    void checkGrade();
 public:
     Bureaucrat(const string &name, int grade);
 
