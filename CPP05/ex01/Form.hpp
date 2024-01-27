@@ -2,8 +2,16 @@
 #define CPPMODULESPROJECT_FORM_HPP
 
 #include "Bureaucrat.hpp"
+#include <iostream>
+#include <stdexcept>
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+using std::exception;
+using std::ostream;
 
-class FailedSignForm : public exception {
+class FailedSignForm : public std::exception {
 public:
 	FailedSignForm() throw();
 
@@ -25,10 +33,10 @@ public:
     void beSigned(const Bureaucrat& bur);
 	const string getFormName() const;
 	bool getFormSigned() const;
-	 int getFormSignGrade() const;
-	 int getFormExecGrade() const;
+	int getFormSignGrade() const;
+	int getFormExecGrade() const;
 };
 
-std::ostream &operator<<(std::ostream &ostream, const Form &obj);
+ostream &operator<<(ostream &ostream, const Form &obj);
 
-#endif //CPPMODULESPROJECT_FORM_HPP
+#endif

@@ -1,4 +1,14 @@
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
+
+void Bureaucrat::signForm(Form& form) {
+    if (form.getFormSigned()) {
+        cout << getName() << " signed " << form.getFormName() << endl;
+    }
+    else {
+        cout << getName() << " couldn't sign " << form.getFormName() << " becuse reason" << endl;
+    }
+}
 
 TooLowGrade::TooLowGrade() throw() {};
 
@@ -34,9 +44,7 @@ Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grad
     checkErrors();
 }
 
-Bureaucrat::~Bureaucrat() {
-
-}
+Bureaucrat::~Bureaucrat() {}
 
 const string &Bureaucrat::getName() const {
     return _name;
