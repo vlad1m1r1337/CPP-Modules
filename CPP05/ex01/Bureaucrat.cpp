@@ -1,7 +1,7 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
-void Bureaucrat::signForm(Form& form) {
+void Bureaucrat::signForm(const Form& form) const {
     if (form.getFormSigned()) {
         cout << getName() << " signed " << form.getFormName() << endl;
     }

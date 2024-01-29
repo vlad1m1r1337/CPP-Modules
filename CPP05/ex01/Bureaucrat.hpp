@@ -1,8 +1,6 @@
 #ifndef CPPMODULESPROJECT_BUREAUCRAT_HPP
 #define CPPMODULESPROJECT_BUREAUCRAT_HPP
 
-#include "Form.hpp"
-
 #include <iostream>
 #include <stdexcept>
 
@@ -12,6 +10,8 @@ using std::endl;
 using std::string;
 using std::exception;
 using std::ostream;
+
+class Form;
 
 class TooLowGrade : public std::exception
 {
@@ -39,7 +39,7 @@ private:
     int _grade;
     void checkErrors();
 public:
-	void signForm(Form& form);
+	void signForm(const Form& form) const;
 
     Bureaucrat(const string &name, int grade);
 
