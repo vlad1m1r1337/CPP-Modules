@@ -35,9 +35,7 @@ Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grad
     checkErrors();
 }
 
-Bureaucrat::~Bureaucrat() {
-
-}
+Bureaucrat::~Bureaucrat() {}
 
 const string &Bureaucrat::getName() const {
     return _name;
@@ -70,4 +68,23 @@ void Bureaucrat::signForm(const AForm& form) const {
     else {
         cout << getName() << " couldn't sign " << form.getFormName() << " becuse reason" << endl;
     }
+}
+
+void Bureaucrat::executeForm(AForm& form) {
+	try {
+		form.execute(*this);
+		cout << this->getName() << " executed " << form.getFormName() << endl;
+	}
+	catch (const TooLowGrade& e) {
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << e.what() << endl;
+	}
+	catch (const NotSignedForm& e2) {
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << e2.what() << endl;
+	}
+	catch (const FailedSignForm& e3) {
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << e3.what() << endl;
+	}
 }

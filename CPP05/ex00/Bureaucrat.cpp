@@ -34,6 +34,10 @@ Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grad
 	checkErrors();
 }
 
+Bureaucrat::Bureaucrat() {
+
+}
+
 Bureaucrat::~Bureaucrat() {
 
 }

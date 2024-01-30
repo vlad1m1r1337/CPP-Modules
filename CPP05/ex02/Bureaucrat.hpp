@@ -51,6 +51,8 @@ public:
     ~Bureaucrat();
 
     void signForm(const AForm& form) const;
+
+	void executeForm(AForm& form);
 };
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj);

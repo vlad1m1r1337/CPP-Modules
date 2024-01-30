@@ -45,6 +45,8 @@ public:
 
     void setName(const string &name);
 
+	Bureaucrat();
+
     ~Bureaucrat();
 };
 

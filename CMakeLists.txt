@@ -4,11 +4,9 @@ project(CPPModulesProject)
 set(CMAKE_CXX_STANDARD 98)
 
 add_executable(CPPModulesProject
-        CPP04/ex03/main.cpp
-        CPP04/ex03/Ice.cpp
-        CPP04/ex03/AMateria.cpp
-        CPP04/ex03/Cure.cpp
-        CPP04/ex03/MateriaSource.cpp
-        CPP04/ex03/Character.cpp
-        CPP04/ex03/ICharacter.cpp
+        CPP05/ex02/AForm.cpp
+        CPP05/ex02/Bureaucrat.cpp
+        CPP05/ex02/main.cpp
+        CPP05/ex02/PresidentialPardonForm.cpp
+        CPP05/ex02/RobotomyRequestForm.cpp
 )

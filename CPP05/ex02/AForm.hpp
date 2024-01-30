@@ -30,9 +30,10 @@ public:
 	AForm(const string &name);
 	AForm(const string &name, const int sign_grade, const int exec_grade);
 
-	~AForm();
+	virtual ~AForm();
 
-	virtual void beSigned(const Bureaucrat &bur) = 0;
+	void beSigned(const Bureaucrat &bur);
+	virtual void execute(const Bureaucrat &bur) = 0;
 
 	const string getFormName() const;
 

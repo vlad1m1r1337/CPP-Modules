@@ -2,9 +2,10 @@
 #include "Form.hpp"
 
 int main() {
-    const Bureaucrat bur("Tom", 149);
+    const Bureaucrat bur("Tom", 12);
     Form form("form");
     try {
+    	bur.signForm(form);
         form.beSigned(bur);
         cout << form << endl;
     }
@@ -17,5 +18,4 @@ int main() {
     catch (const TooHighGrade& error3) {
         cout << error3.what() << endl;
     }
-    bur.signForm(form);
 }
