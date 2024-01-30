@@ -1,4 +1,5 @@
 #include "Bureaucrat.hpp"
+#include "AForm.hpp"
 
 TooLowGrade::TooLowGrade() throw() {};
 
@@ -60,4 +61,13 @@ std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)
 {
     std::cout << obj.getName() <<" ,bureaucrat grade " << obj.getGrade() << endl;
     return ostream;
+}
+
+void Bureaucrat::signForm(const AForm& form) const {
+    if (form.getFormSigned()) {
+        cout << getName() << " signed " << form.getFormName() << endl;
+    }
+    else {
+        cout << getName() << " couldn't sign " << form.getFormName() << " becuse reason" << endl;
+    }
 }

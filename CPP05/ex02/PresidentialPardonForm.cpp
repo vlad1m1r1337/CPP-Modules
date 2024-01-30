@@ -8,7 +8,18 @@ PresidentialPardonForm::PresidentialPardonForm(const string &name) : AForm(name,
 
 PresidentialPardonForm::~PresidentialPardonForm() {}
 
-void PresidentialPardonForm::beSigned(const Bureaucrat &bur) {
+void AForm::beSigned(const Bureaucrat &bur) {
+    if (bur.getGrade() > _sign_grade) {
+        cout << bur.getName() << " couldn’t sign " << _name << " because too low grade" <<  endl;
+        throw FailedSignForm();
+    }
+    else {
+        _signed = true;
+        cout << bur.getName() << " signed " << _name << endl;
+    }
+}
+
+void PresidentialPardonForm::execute(const Bureaucrat &bur) {
 	if (bur.getGrade() > AForm::getFormExecGrade()) {
 		throw TooLowGrade();
 	}

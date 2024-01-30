@@ -10,6 +10,8 @@ using std::endl;
 using std::string;
 using std::exception;
 
+class AForm;
+
 class TooLowGrade : public std::exception
 {
 public:
@@ -47,6 +49,8 @@ public:
     void setName(const string &name);
 
     ~Bureaucrat();
+
+    void signForm(const AForm& form) const;
 };
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj);

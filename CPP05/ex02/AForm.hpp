@@ -47,4 +47,4 @@ public:
 
 std::ostream &operator<<(std::ostream &ostream, const AForm &obj);
 
-#endif //CPPMODULESPROJECT_FORM_HPP
+#endif
