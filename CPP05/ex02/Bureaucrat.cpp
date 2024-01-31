@@ -77,15 +77,15 @@ void Bureaucrat::executeForm(AForm& form) {
 	}
 	catch (const TooLowGrade& e) {
 		cout << e.what() << endl;
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e.what() << endl;
 	}
 	catch (const NotSignedForm& e2) {
 		cout << e2.what() << endl;
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e2.what() << endl;
 	}
 	catch (const FailedSignForm& e3) {
 		cout << e3.what() << endl;
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
+		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e3.what() << endl;
 	}
 }
 
