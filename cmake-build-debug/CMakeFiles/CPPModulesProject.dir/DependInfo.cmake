@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o.d"
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o.d"
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o.d"
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o.d"
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP05/ex02/AForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP05/ex02/Bureaucrat.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP05/ex02/PresidentialPardonForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP05/ex02/RobotomyRequestForm.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.obj.d"
+  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP05/ex02/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
