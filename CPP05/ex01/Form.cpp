@@ -47,4 +47,19 @@ Form::Form(const string &name) : _name(name), _sign_grade(130), _exec_grade(130)
     _signed = false;
 }
 
+Form::Form() : _name("form"), _signed(false), _sign_grade(1), _exec_grade(1) {}
+
 Form::~Form() {}
+
+Form::Form(const Form &copy)
+        : _name(copy._name),
+        _signed(copy._signed),
+        _sign_grade(copy._sign_grade) ,
+        _exec_grade(copy._exec_grade) {
+        *this = copy;
+}
+
+Form &Form::operator=(Form const &other) {
+    _signed = other._signed;
+    return *this;
+}

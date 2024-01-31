@@ -27,10 +27,10 @@ private:
 	const int _exec_grade;
 
 public:
-	AForm(const string &name);
+	AForm();
 	AForm(const string &name, const int sign_grade, const int exec_grade);
 
-	virtual ~AForm();
+	 virtual ~AForm();
 
 	void beSigned(const Bureaucrat &bur);
 	virtual void execute(const Bureaucrat &bur) = 0;
@@ -44,6 +44,10 @@ public:
 	int getFormExecGrade() const;
 
 	void setFormSigned(bool sign);
+
+    AForm(const AForm &copy);
+
+    AForm &operator=(AForm const &other);
 };
 
 std::ostream &operator<<(std::ostream &ostream, const AForm &obj);

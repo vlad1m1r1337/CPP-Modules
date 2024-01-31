@@ -57,7 +57,7 @@ void AForm::setFormSigned(bool sign) {
     _signed = sign;
 }
 
-AForm::AForm(const string &name) : _name(name), _sign_grade(130), _exec_grade(130) {
+AForm::AForm() : _name("name"), _sign_grade(130), _exec_grade(130) {
     _signed = false;
 }
 
@@ -66,3 +66,16 @@ AForm::AForm(const std::string &name, const int sign_grade, const int exec_grade
 }
 
 AForm::~AForm() {}
+
+AForm::AForm(const AForm &copy)
+        : _name(copy._name),
+          _signed(copy._signed),
+          _sign_grade(copy._sign_grade) ,
+          _exec_grade(copy._exec_grade) {
+    *this = copy;
+}
+
+AForm &AForm::operator=(AForm const &other) {
+    _signed = other._signed;
+    return *this;
+}

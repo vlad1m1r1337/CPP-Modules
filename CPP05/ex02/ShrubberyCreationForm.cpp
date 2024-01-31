@@ -1,13 +1,56 @@
 #include "ShrubberyCreationForm.hpp"
 #include "AForm.hpp"
 
-void beSigned(const Bureaucrat& bur) {
-	if (bur.getGrade() > AForm::getFormExecGrade()) {
-		throw TooLowGrade();
-	}
+ShrubberyCreationForm::ShrubberyCreationForm() : AForm("name", 145, 137) {}
+
+ShrubberyCreationForm::ShrubberyCreationForm(const string &name) : AForm(name, 145, 137) {}\
+
+ShrubberyCreationForm::~ShrubberyCreationForm() {}
+
+ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm& other) {
+    if (&other != this) {
+        AForm::operator=(other);
+    }
+    return *this;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm() : AForm("name") {}
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& copy) : AForm(copy) {
+    *this = copy;
+}
 
-ShrubberyCreationForm::ShrubberyCreationForm(const string &name) : AForm(name, 145, 137) {}
+void createThree(string name) {
+    ofstream  out(name.c_str());
+    if (!out.is_open()) {
+        std::cerr << "Unable to open file for writing: " << name << std::endl;
+        return;
+    }
+    std::string treeArt =
+            "        *\n"
+            "       /|\\\n"
+            "      /*|*\\\n"
+            "     /*/|\\*\\\n"
+            "    /*/ | \\*\\\n"
+            "   /*/ /|\\ \\*\\\n"
+            "    |  |||\n"
+            "    |  |||\n"
+            "____|__|||____\n"
+            "   /    \\\n"
+            "  /      \\\n"
+            " /        \\\n"
+            "============";
+    out << treeArt;
 
+    out.close();
+}
+
+void ShrubberyCreationForm::execute(const Bureaucrat &bur) {
+    if (bur.getGrade() > AForm::getFormExecGrade()) {
+        cout << "the robotomy failed" << endl;
+        throw TooLowGrade();
+    }
+    if (!AForm::getFormSigned()) {
+        cout << "the robotomy failed" << endl;
+        throw NotSignedForm();
+    }
+    createThree(AForm::getFormName());
+}

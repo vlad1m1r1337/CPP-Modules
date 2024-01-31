@@ -5,12 +5,14 @@
 
 class RobotomyRequestForm : public AForm {
 public:
-//	void beSigned(const Bureaucrat &bur);
 	void execute(const Bureaucrat &bur);
 	RobotomyRequestForm(const string &name);
 	RobotomyRequestForm();
 	virtual ~RobotomyRequestForm();
+
+    RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
+    RobotomyRequestForm(const RobotomyRequestForm &copy);
 };
 
 
-#endif //CPPMODULESPROJECT_ROBOTOMYREQUESTFORM_HPP
+#endif

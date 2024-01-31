@@ -3,12 +3,15 @@
 
 #include "iostream"
 #include <stdexcept>
+#include <fstream>
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
 using std::exception;
+using std::ofstream;
+using std::ifstream;
 
 class AForm;
 
@@ -38,6 +41,7 @@ private:
     int _grade;
     void checkErrors();
 public:
+    Bureaucrat();
     Bureaucrat(const string &name, int grade);
 
     int getGrade() const;
@@ -53,6 +57,10 @@ public:
     void signForm(const AForm& form) const;
 
 	void executeForm(AForm& form);
+
+    Bureaucrat& operator=(const Bureaucrat &other);
+
+    Bureaucrat (const Bureaucrat &copy);
 };
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj);

@@ -51,7 +51,12 @@ public:
 
     void setName(const string &name);
 
+    Bureaucrat();
     ~Bureaucrat();
+
+    Bureaucrat& operator=(const Bureaucrat &other);
+
+    Bureaucrat (const Bureaucrat &copy);
 };
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj);

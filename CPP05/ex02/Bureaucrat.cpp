@@ -76,15 +76,33 @@ void Bureaucrat::executeForm(AForm& form) {
 		cout << this->getName() << " executed " << form.getFormName() << endl;
 	}
 	catch (const TooLowGrade& e) {
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 		cout << e.what() << endl;
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 	}
 	catch (const NotSignedForm& e2) {
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 		cout << e2.what() << endl;
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 	}
 	catch (const FailedSignForm& e3) {
-		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 		cout << e3.what() << endl;
+		cout << this->getName() << " failed to execute " << form.getFormName() << endl;
 	}
+}
+
+Bureaucrat& Bureaucrat::operator=(const Bureaucrat &other) {
+    if (&other != this) {
+        this->_name = other._name;
+        this->_grade = other._grade;
+        return *this;
+    }
+    return *this;
+}
+
+Bureaucrat::Bureaucrat(const Bureaucrat &copy) {
+    *this = copy;
+}
+
+Bureaucrat::Bureaucrat() {
+    _name = "Vova";
+    _grade = 1;
 }

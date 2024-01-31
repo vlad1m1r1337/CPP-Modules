@@ -39,6 +39,11 @@ void Bureaucrat::checkErrors() {
     }
 }
 
+Bureaucrat::Bureaucrat() {
+    _name = "Vova";
+    _grade = 1;
+}
+
 Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grade) {
     cout << "\e[34mConstructor for " << _name << " was called\e[0m" << endl;
     checkErrors();
@@ -62,6 +67,19 @@ void Bureaucrat::setGrade(int grade) {
     _grade = grade;
     checkErrors();
 
+}
+
+Bureaucrat& Bureaucrat::operator=(const Bureaucrat &other) {
+    if (&other != this) {
+        this->_name = other._name;
+        this->_grade = other._grade;
+        return *this;
+    }
+    return *this;
+}
+
+Bureaucrat::Bureaucrat(const Bureaucrat &copy) {
+    *this = copy;
 }
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)

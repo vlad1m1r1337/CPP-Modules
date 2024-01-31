@@ -5,11 +5,13 @@
 
 class PresidentialPardonForm : public AForm {
 public:
-//    void beSigned(const Bureaucrat &bur);
     void execute(const Bureaucrat &bur);
+    PresidentialPardonForm();
 	PresidentialPardonForm(const string &name);
-	PresidentialPardonForm();
 	virtual ~PresidentialPardonForm();
+
+    PresidentialPardonForm(const PresidentialPardonForm &copy);
+    PresidentialPardonForm& operator=(const PresidentialPardonForm &other);
 };
 
 

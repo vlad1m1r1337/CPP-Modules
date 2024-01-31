@@ -35,7 +35,6 @@ private:
     int _grade;
     void checkErrors();
 public:
-    Bureaucrat(const string &name, int grade);
 
     int getGrade() const;
 
@@ -45,9 +44,15 @@ public:
 
     void setName(const string &name);
 
+    Bureaucrat(const string &name, int grade);
+
 	Bureaucrat();
 
     ~Bureaucrat();
+
+    Bureaucrat& operator=(const Bureaucrat &other);
+
+    Bureaucrat (const Bureaucrat &copy);
 };
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj);

@@ -2,7 +2,7 @@
 #include "AForm.hpp"
 #include "Bureaucrat.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm() : AForm("name") {}
+PresidentialPardonForm::PresidentialPardonForm() : AForm("name", 25, 5) {}
 
 PresidentialPardonForm::PresidentialPardonForm(const string &name) : AForm(name, 25, 5) {}
 
@@ -16,4 +16,15 @@ void PresidentialPardonForm::execute(const Bureaucrat &bur) {
 		throw NotSignedForm();
 	}
 	cout << bur.getName() << " has been pardoned by Zaphod Beeblebrox" << endl;
+}
+
+PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPardonForm &other) {
+    if (&other != this) {
+        AForm::operator=(other);
+    }
+    return *this;
+}
+
+PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &copy) : AForm(copy) {
+    *this = copy;
 }

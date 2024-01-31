@@ -1,15 +1,19 @@
 #ifndef CPPMODULESPROJECT_SHRUBBERYCREATIONFORM_HPP
 #define CPPMODULESPROJECT_SHRUBBERYCREATIONFORM_HPP
 
-#include "Bureaucrat.hpp"
 #include "AForm.hpp"
 
-class ShrubberyCreationForm : AForm {
-	void beSigned(const Bureaucrat& bur);
+class ShrubberyCreationForm : public AForm {
+public:
+    void execute(const Bureaucrat &bur);
 	ShrubberyCreationForm(const string &name);
 	ShrubberyCreationForm();
-	~ShrubberyCreationForm();
+	virtual ~ShrubberyCreationForm();
+
+    ShrubberyCreationForm& operator=(const ShrubberyCreationForm& other);
+    ShrubberyCreationForm(const ShrubberyCreationForm& copy);
 };
 
+    void createThree(string name);
 
 #endif

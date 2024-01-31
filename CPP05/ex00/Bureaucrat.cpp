@@ -34,14 +34,6 @@ Bureaucrat::Bureaucrat(const string &name, int grade) : _name(name), _grade(grad
 	checkErrors();
 }
 
-Bureaucrat::Bureaucrat() {
-
-}
-
-Bureaucrat::~Bureaucrat() {
-
-}
-
 const string &Bureaucrat::getName() const {
     return _name;
 }
@@ -58,6 +50,28 @@ void Bureaucrat::setGrade(int grade) {
     _grade = grade;
     checkErrors();
 
+}
+
+Bureaucrat::Bureaucrat() {
+    _name = "Vova";
+    _grade = 1;
+}
+
+Bureaucrat::~Bureaucrat() {
+
+}
+
+Bureaucrat& Bureaucrat::operator=(const Bureaucrat &other) {
+    if (&other != this) {
+        this->_name = other._name;
+        this->_grade = other._grade;
+        return *this;
+    }
+    return *this;
+}
+
+Bureaucrat::Bureaucrat(const Bureaucrat &copy) {
+    *this = copy;
 }
 
 std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)

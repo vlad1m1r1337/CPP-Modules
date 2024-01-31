@@ -28,6 +28,7 @@ private:
     const int _exec_grade;
 
 public:
+    Form();
     Form(const string &name);
     ~Form();
     void beSigned(const Bureaucrat& bur);
@@ -35,6 +36,9 @@ public:
 	bool getFormSigned() const;
 	int getFormSignGrade() const;
 	int getFormExecGrade() const;
+
+    Form (const Form &copy);
+    Form &operator=(Form const &other);
 };
 
 ostream &operator<<(ostream &ostream, const Form &obj);
