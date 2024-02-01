@@ -7,7 +7,7 @@ class PresidentialPardonForm : public AForm {
 public:
     void execute(const Bureaucrat &bur);
     PresidentialPardonForm();
-	PresidentialPardonForm(const string &name);
+	PresidentialPardonForm(const string &target);
 	virtual ~PresidentialPardonForm();
 
     PresidentialPardonForm(const PresidentialPardonForm &copy);

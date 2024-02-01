@@ -10,15 +10,7 @@ using std::endl;
 using std::string;
 using std::exception;
 using std::ostream;
-
-class FailedSignForm : public std::exception {
-public:
-	FailedSignForm() throw();
-
-	~FailedSignForm() throw();
-
-	const char* what() const throw();
-};
+using std::exception;
 
 class Form {
 private:
@@ -28,6 +20,25 @@ private:
     const int _exec_grade;
 
 public:
+	class GradeTooLowException : public std::exception
+	{
+	public:
+		GradeTooLowException() throw();
+
+		~GradeTooLowException() throw();
+
+		const char* what() const throw();
+	};
+
+	class GradeTooHighException : public std::exception
+	{
+	public:
+		GradeTooHighException() throw();
+
+		~GradeTooHighException() throw();
+
+		const char* what() const throw();
+	};
     Form();
     Form(const string &name);
     ~Form();

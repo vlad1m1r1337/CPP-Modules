@@ -13,33 +13,33 @@ using std::ostream;
 
 class Form;
 
-class TooLowGrade : public std::exception
-{
-public:
-    TooLowGrade() throw();
-
-    ~TooLowGrade() throw();
-
-    const char* what() const throw();
-};
-
-class TooHighGrade : public std::exception
-{
-public:
-    TooHighGrade() throw();
-
-    ~TooHighGrade() throw();
-
-    const char* what() const throw();
-};
-
 class Bureaucrat {
 private:
     string _name;
     int _grade;
     void checkErrors();
 public:
-	void signForm(const Form& form) const;
+	class TooLowGrade : public std::exception
+	{
+	public:
+		TooLowGrade() throw();
+
+		~TooLowGrade() throw();
+
+		const char* what() const throw();
+	};
+
+	class TooHighGrade : public std::exception
+	{
+	public:
+		TooHighGrade() throw();
+
+		~TooHighGrade() throw();
+
+		const char* what() const throw();
+	};
+
+	void signForm(Form& form);
 
     Bureaucrat(const string &name, int grade);
 
@@ -50,6 +50,10 @@ public:
     const string &getName() const;
 
     void setName(const string &name);
+
+	void increment();
+
+	void decrement();
 
     Bureaucrat();
     ~Bureaucrat();

@@ -3,22 +3,6 @@
 
 #include "Bureaucrat.hpp"
 
-class FailedSignForm : public exception {
-public:
-	FailedSignForm() throw();
-
-	~FailedSignForm() throw();
-
-	const char* what() const throw();
-};
-
-class NotSignedForm : public exception {
-public:
-	NotSignedForm() throw();
-	~NotSignedForm() throw();
-	const char* what() const throw();
-};
-
 class AForm {
 private:
 	const string _name;
@@ -27,6 +11,25 @@ private:
 	const int _exec_grade;
 
 public:
+	class GradeTooLowException : public std::exception
+	{
+	public:
+		GradeTooLowException() throw();
+
+		~GradeTooLowException() throw();
+
+		const char* what() const throw();
+	};
+
+	class GradeTooHighException : public std::exception
+	{
+	public:
+		GradeTooHighException() throw();
+
+		~GradeTooHighException() throw();
+
+		const char* what() const throw();
+	};
 	AForm();
 	AForm(const string &name, const int sign_grade, const int exec_grade);
 

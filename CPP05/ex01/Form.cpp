@@ -1,23 +1,31 @@
 #include "Form.hpp"
 
-FailedSignForm::FailedSignForm() throw() {}
+Form::GradeTooLowException::GradeTooLowException() throw() {};
 
-FailedSignForm::~FailedSignForm() throw() {}
+Form::GradeTooLowException::~GradeTooLowException() throw() {};
 
-const char* FailedSignForm::what() const throw()
+const char* Form::GradeTooLowException::what() const throw()
 {
-    const char* message = "failed to sign form";
+    const char* message = "Too low grade";
+    return message;
+}
+
+Form::GradeTooHighException::GradeTooHighException() throw() {};
+
+Form::GradeTooHighException::~GradeTooHighException() throw() {};
+
+const char* Form::GradeTooHighException::what() const throw()
+{
+    const char* message = "Too high grade";
     return message;
 }
 
 void Form::beSigned(const Bureaucrat &bur) {
     if (bur.getGrade() > _sign_grade) {
-        cout << bur.getName() << " couldn’t sign " << _name << " because too low grade" <<  endl;
-        throw FailedSignForm();
+        throw GradeTooLowException();
     }
     else {
         _signed = true;
-        cout << bur.getName() << " signed " << _name << endl;
     }
 }
 
@@ -45,6 +53,12 @@ bool Form::getFormSigned() const {
 
 Form::Form(const string &name) : _name(name), _sign_grade(130), _exec_grade(130) {
     _signed = false;
+    if (_sign_grade < 1) {
+        throw GradeTooHighException();
+    }
+    if (_sign_grade > 150) {
+        throw GradeTooLowException();
+    }
 }
 
 Form::Form() : _name("form"), _signed(false), _sign_grade(1), _exec_grade(1) {}

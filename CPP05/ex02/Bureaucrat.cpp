@@ -1,24 +1,24 @@
 #include "Bureaucrat.hpp"
 #include "AForm.hpp"
 
-TooLowGrade::TooLowGrade() throw() {};
+Bureaucrat::TooLowGrade::TooLowGrade() throw() {};
 
-TooLowGrade::~TooLowGrade() throw() {};
+Bureaucrat::TooLowGrade::~TooLowGrade() throw() {};
 
-const char* TooLowGrade::what() const throw()
+const char* Bureaucrat::TooLowGrade::what() const throw()
 {
-    const char* message = "Too low grade";
-    return message;
+	const char* message = "Too low bureaucrat grade";
+	return message;
 }
 
-TooHighGrade::TooHighGrade() throw() {};
+Bureaucrat::TooHighGrade::TooHighGrade() throw() {};
 
-TooHighGrade::~TooHighGrade() throw() {};
+Bureaucrat::TooHighGrade::~TooHighGrade() throw() {};
 
-const char* TooHighGrade::what() const throw()
+const char* Bureaucrat::TooHighGrade::what() const throw()
 {
-    const char* message = "Too high grade";
-    return message;
+	const char* message = "Too high bureaucrat grade";
+	return message;
 }
 
 void Bureaucrat::checkErrors() {
@@ -61,13 +61,14 @@ std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)
     return ostream;
 }
 
-void Bureaucrat::signForm(const AForm& form) const {
-    if (form.getFormSigned()) {
-        cout << getName() << " signed " << form.getFormName() << endl;
-    }
-    else {
-        cout << getName() << " couldn't sign " << form.getFormName() << " becuse reason" << endl;
-    }
+void Bureaucrat::signForm(AForm& form) {
+	try {
+		form.beSigned(*this);
+		cout << getName() << " signed " << form.getFormName() << endl;
+	}
+	catch (const exception& e) {
+		cout << getName() << " couldn’t sign "<< form.getFormName() << " because " << e.what() << endl;
+	}
 }
 
 void Bureaucrat::executeForm(AForm& form) {
@@ -75,17 +76,8 @@ void Bureaucrat::executeForm(AForm& form) {
 		form.execute(*this);
 		cout << this->getName() << " executed " << form.getFormName() << endl;
 	}
-	catch (const TooLowGrade& e) {
-		cout << e.what() << endl;
+	catch(const exception& e) {
 		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e.what() << endl;
-	}
-	catch (const NotSignedForm& e2) {
-		cout << e2.what() << endl;
-		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e2.what() << endl;
-	}
-	catch (const FailedSignForm& e3) {
-		cout << e3.what() << endl;
-		cout << this->getName() << " cannot execute " << form.getFormName() << " because " << e3.what() << endl;
 	}
 }
 
@@ -105,4 +97,21 @@ Bureaucrat::Bureaucrat(const Bureaucrat &copy) {
 Bureaucrat::Bureaucrat() {
     _name = "Vova";
     _grade = 1;
+}
+
+void Bureaucrat::increment() {
+	int cur_grade = getGrade() + 1;
+	if (cur_grade > 150) {
+		throw TooLowGrade();
+	}
+	setGrade(cur_grade);
+}
+
+
+void Bureaucrat::decrement() {
+	int cur_grade = getGrade() - 1;
+	if (cur_grade < 1) {
+		throw TooHighGrade();
+	}
+	setGrade(cur_grade);
 }

@@ -3,7 +3,7 @@
 
 ShrubberyCreationForm::ShrubberyCreationForm() : AForm("name", 145, 137) {}
 
-ShrubberyCreationForm::ShrubberyCreationForm(const string &name) : AForm(name, 145, 137) {}\
+ShrubberyCreationForm::ShrubberyCreationForm(const string &target) : AForm(target, 145, 137) {}\
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
 
@@ -45,12 +45,11 @@ void createThree(string name) {
 
 void ShrubberyCreationForm::execute(const Bureaucrat &bur) {
     if (bur.getGrade() > AForm::getFormExecGrade()) {
-        cout << "the robotomy failed" << endl;
-        throw TooLowGrade();
+        throw Bureaucrat::TooLowGrade();
     }
     if (!AForm::getFormSigned()) {
-        cout << "the robotomy failed" << endl;
-        throw NotSignedForm();
+        cout << "form is not signed" << endl;
+		return ;
     }
     createThree(AForm::getFormName());
 }

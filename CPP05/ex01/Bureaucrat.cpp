@@ -1,32 +1,33 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
-void Bureaucrat::signForm(const Form& form) const {
-    if (form.getFormSigned()) {
-        cout << getName() << " signed " << form.getFormName() << endl;
+void Bureaucrat::signForm(Form& form) {
+    try {
+        form.beSigned(*this);
+		cout << getName() << " signed " << form.getFormName() << endl;
     }
-    else {
-        cout << getName() << " couldn't sign " << form.getFormName() << " becuse reason" << endl;
+    catch (const exception& e) {
+        cout << getName() << " couldn’t sign "<< form.getFormName() << " because " << e.what() << endl;
     }
 }
 
-TooLowGrade::TooLowGrade() throw() {};
+Bureaucrat::TooLowGrade::TooLowGrade() throw() {};
 
-TooLowGrade::~TooLowGrade() throw() {};
+Bureaucrat::TooLowGrade::~TooLowGrade() throw() {};
 
-const char* TooLowGrade::what() const throw()
+const char* Bureaucrat::TooLowGrade::what() const throw()
 {
-    const char* message = "Too low grade";
+    const char* message = "Too low bureaucrat grade";
     return message;
 }
 
-TooHighGrade::TooHighGrade() throw() {};
+Bureaucrat::TooHighGrade::TooHighGrade() throw() {};
 
-TooHighGrade::~TooHighGrade() throw() {};
+Bureaucrat::TooHighGrade::~TooHighGrade() throw() {};
 
-const char* TooHighGrade::what() const throw()
+const char* Bureaucrat::TooHighGrade::what() const throw()
 {
-    const char* message = "Too high grade";
+    const char* message = "Too high bureaucrat grade";
     return message;
 }
 
@@ -86,4 +87,21 @@ std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)
 {
     std::cout << obj.getName() <<" ,bureaucrat grade " << obj.getGrade() << endl;
     return ostream;
+}
+
+void Bureaucrat::increment() {
+    int cur_grade = getGrade() + 1;
+    if (cur_grade > 150) {
+        throw TooLowGrade();
+    }
+    setGrade(cur_grade);
+}
+
+
+void Bureaucrat::decrement() {
+    int cur_grade = getGrade() - 1;
+    if (cur_grade < 1) {
+        throw TooHighGrade();
+    }
+    setGrade(cur_grade);
 }

@@ -1,15 +1,14 @@
 #include "RobotomyRequestForm.hpp"
 
-RobotomyRequestForm::RobotomyRequestForm(const string &name) : AForm(name, 72, 45) {}
+RobotomyRequestForm::RobotomyRequestForm(const string &target) : AForm(target, 72, 45) {}
 
 void RobotomyRequestForm::execute(const Bureaucrat &bur) {
 	if (bur.getGrade() > AForm::getFormExecGrade()) {
-		cout << "the robotomy failed" << endl;
-		throw TooLowGrade();
+		throw Bureaucrat::TooLowGrade();
 	}
 	if (!AForm::getFormSigned()) {
-		cout << "the robotomy failed" << endl;
-		throw NotSignedForm();
+		cout << "form is not signed" << endl;
+		return ;
 	}
 	cout << bur.getName() << " has been robotomized successfully 50% of the time" << endl;
 }

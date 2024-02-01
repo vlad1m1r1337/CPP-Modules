@@ -1,33 +1,31 @@
 #include "AForm.hpp"
 
-NotSignedForm::NotSignedForm() throw() {}
+AForm::GradeTooLowException::GradeTooLowException() throw() {};
 
-NotSignedForm::~NotSignedForm() throw() {}
+AForm::GradeTooLowException::~GradeTooLowException() throw() {};
 
-const char* NotSignedForm::what() const throw()
+const char* AForm::GradeTooLowException::what() const throw()
 {
-	const char* message = "form is not signed";
-	return message;
+    const char* message = "Too low grade";
+    return message;
 }
 
-FailedSignForm::FailedSignForm() throw() {}
+AForm::GradeTooHighException::GradeTooHighException() throw() {};
 
-FailedSignForm::~FailedSignForm() throw() {}
+AForm::GradeTooHighException::~GradeTooHighException() throw() {};
 
-const char* FailedSignForm::what() const throw()
+const char* AForm::GradeTooHighException::what() const throw()
 {
-    const char* message = "failed to sign form";
+    const char* message = "Too high grade";
     return message;
 }
 
 void AForm::beSigned(const Bureaucrat &bur) {
     if (bur.getGrade() > _sign_grade) {
-        cout << bur.getName() << " couldn’t sign " << _name << " because too low grade" <<  endl;
-        throw FailedSignForm();
+        throw GradeTooLowException();
     }
     else {
         _signed = true;
-        cout << bur.getName() << " signed " << _name << endl;
     }
 }
 
