@@ -5,8 +5,8 @@
 
 int main() {
 	try {
-		Bureaucrat vovan("Vladimir", 130);
-        ShrubberyCreationForm pres("lalka");
+		Bureaucrat vovan("Vladimir", 100);
+        ShrubberyCreationForm pres("shrubbery");
 		vovan.signForm(pres);
         vovan.executeForm(pres);
     }
