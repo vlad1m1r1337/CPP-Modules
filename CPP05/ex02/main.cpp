@@ -5,8 +5,8 @@
 
 int main() {
 	try {
-		Bureaucrat vovan("Vladimir", 0);
-        PresidentialPardonForm pres("pardon");
+		Bureaucrat vovan("Vladimir", 45);
+        RobotomyRequestForm pres("pardon");
 		vovan.signForm(pres);
         vovan.executeForm(pres);
     }

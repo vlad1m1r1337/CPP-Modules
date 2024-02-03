@@ -2,7 +2,7 @@
 
 RobotomyRequestForm::RobotomyRequestForm(const string &target) : AForm(target, 72, 45) {}
 
-void RobotomyRequestForm::execute(const Bureaucrat &bur) {
+void RobotomyRequestForm::execute(const Bureaucrat &bur) const {
 	if (bur.getGrade() > AForm::getFormExecGrade()) {
 		throw Bureaucrat::TooLowGrade();
 	}

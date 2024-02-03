@@ -51,7 +51,7 @@ bool Form::getFormSigned() const {
     return _exec_grade;
 }
 
-Form::Form(const string &name) : _name(name), _sign_grade(130), _exec_grade(130) {
+Form::Form(const string &name, int sign_grade, int exec_grade) : _name(name), _sign_grade(sign_grade), _exec_grade(exec_grade) {
     _signed = false;
     if (_sign_grade < 1) {
         throw GradeTooHighException();
@@ -59,6 +59,12 @@ Form::Form(const string &name) : _name(name), _sign_grade(130), _exec_grade(130)
     if (_sign_grade > 150) {
         throw GradeTooLowException();
     }
+	if (_exec_grade < 1) {
+		throw GradeTooHighException();
+	}
+	if (_exec_grade > 150) {
+		throw GradeTooLowException();
+	}
 }
 
 Form::Form() : _name("form"), _signed(false), _sign_grade(1), _exec_grade(1) {}

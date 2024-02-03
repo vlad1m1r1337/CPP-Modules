@@ -40,7 +40,7 @@ public:
 		const char* what() const throw();
 	};
     Form();
-    Form(const string &name);
+    Form(const string &name, int sign_grade, int exec_grade);
     ~Form();
     void beSigned(const Bureaucrat& bur);
 	const string getFormName() const;

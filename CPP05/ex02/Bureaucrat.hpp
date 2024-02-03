@@ -17,7 +17,7 @@ class AForm;
 
 class Bureaucrat {
 private:
-    string _name;
+    string const _name;
     int _grade;
     void checkErrors();
 public:
@@ -60,7 +60,7 @@ public:
 
     void signForm(AForm& form);
 
-	void executeForm(AForm& form);
+	void executeForm(const AForm& form);
 
     Bureaucrat& operator=(const Bureaucrat &other);
 

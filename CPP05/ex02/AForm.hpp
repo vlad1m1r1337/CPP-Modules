@@ -30,13 +30,13 @@ public:
 
 		const char* what() const throw();
 	};
+	virtual void execute(const Bureaucrat &bur) const = 0;
 	AForm();
 	AForm(const string &name, const int sign_grade, const int exec_grade);
 
 	 virtual ~AForm();
 
 	void beSigned(const Bureaucrat &bur);
-	virtual void execute(const Bureaucrat &bur) = 0;
 
 	const string getFormName() const;
 

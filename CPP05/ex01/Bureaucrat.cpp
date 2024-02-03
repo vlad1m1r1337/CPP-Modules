@@ -40,8 +40,7 @@ void Bureaucrat::checkErrors() {
     }
 }
 
-Bureaucrat::Bureaucrat() {
-    _name = "Vova";
+Bureaucrat::Bureaucrat() : _name("Vova") {
     _grade = 1;
 }
 
@@ -56,10 +55,6 @@ const string &Bureaucrat::getName() const {
     return _name;
 }
 
-void Bureaucrat::setName(const string &name) {
-    _name = name;
-}
-
 int Bureaucrat::getGrade() const {
     return _grade;
 }
@@ -72,7 +67,6 @@ void Bureaucrat::setGrade(int grade) {
 
 Bureaucrat& Bureaucrat::operator=(const Bureaucrat &other) {
     if (&other != this) {
-        this->_name = other._name;
         this->_grade = other._grade;
         return *this;
     }
@@ -90,7 +84,7 @@ std::ostream &operator<<(std::ostream &ostream, const Bureaucrat &obj)
 }
 
 void Bureaucrat::increment() {
-    int cur_grade = getGrade() + 1;
+    int cur_grade = getGrade() - 1;
     if (cur_grade > 150) {
         throw TooLowGrade();
     }
@@ -99,7 +93,7 @@ void Bureaucrat::increment() {
 
 
 void Bureaucrat::decrement() {
-    int cur_grade = getGrade() - 1;
+    int cur_grade = getGrade() + 1;
     if (cur_grade < 1) {
         throw TooHighGrade();
     }

@@ -57,10 +57,34 @@ void AForm::setFormSigned(bool sign) {
 
 AForm::AForm() : _name("name"), _sign_grade(130), _exec_grade(130) {
     _signed = false;
+    if (_sign_grade < 1) {
+        throw GradeTooHighException();
+    }
+    if (_sign_grade > 150) {
+        throw GradeTooLowException();
+    }
+    if (_exec_grade < 1) {
+        throw GradeTooHighException();
+    }
+    if (_exec_grade > 150) {
+        throw GradeTooLowException();
+    }
 }
 
 AForm::AForm(const std::string &name, const int sign_grade, const int exec_grade) : _name(name), _sign_grade(sign_grade), _exec_grade(exec_grade) {
     _signed = false;
+    if (_sign_grade < 1) {
+        throw GradeTooHighException();
+    }
+    if (_sign_grade > 150) {
+        throw GradeTooLowException();
+    }
+    if (_exec_grade < 1) {
+        throw GradeTooHighException();
+    }
+    if (_exec_grade > 150) {
+        throw GradeTooLowException();
+    }
 }
 
 AForm::~AForm() {}

@@ -43,7 +43,7 @@ void createThree(string name) {
     out.close();
 }
 
-void ShrubberyCreationForm::execute(const Bureaucrat &bur) {
+void ShrubberyCreationForm::execute(const Bureaucrat &bur) const {
     if (bur.getGrade() > AForm::getFormExecGrade()) {
         throw Bureaucrat::TooLowGrade();
     }

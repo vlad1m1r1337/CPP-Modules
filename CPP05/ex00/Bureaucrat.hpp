@@ -11,7 +11,7 @@ using std::string;
 
 class Bureaucrat {
 private:
-    string _name;
+    string const _name;
     int _grade;
     void checkErrors();
 public:

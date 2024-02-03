@@ -3,9 +3,9 @@
 
 int main() {
 	try {
-		Bureaucrat bureaucrat("VOVA", 130);
+		Bureaucrat bureaucrat("VOVA", 13);
 
-		Form form("form");
+		Form form("form", 100, 100);
 		cout << form << endl;
 		bureaucrat.signForm(form);
 		cout << form << endl;

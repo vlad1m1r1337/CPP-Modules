@@ -5,7 +5,7 @@
 
 class RobotomyRequestForm : public AForm {
 public:
-	void execute(const Bureaucrat &bur);
+	void execute(const Bureaucrat &bur) const;
 	RobotomyRequestForm(const string &target);
 	RobotomyRequestForm();
 	virtual ~RobotomyRequestForm();

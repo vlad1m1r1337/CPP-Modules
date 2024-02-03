@@ -36,7 +36,7 @@ public:
 	 virtual ~AForm();
 
 	void beSigned(const Bureaucrat &bur);
-	virtual void execute(const Bureaucrat &bur) = 0;
+	virtual void execute(const Bureaucrat &bur) const = 0;
 
 	const string getFormName() const;
 

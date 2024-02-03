@@ -6,10 +6,10 @@
 
 int main() {
 	try {
-		Bureaucrat vovan("Vladimir", 100);
+		Bureaucrat vovan("Vladimir", 10);
 		Intern someRandomIntern;
 		AForm* rrf;
-		rrf = someRandomIntern.makeForm("shrubbery request", "davavavai");
+		rrf = someRandomIntern.makeForm("robotomy request", "davavavai");
 		vovan.signForm(*rrf);
 		vovan.executeForm(*rrf);
 	}
