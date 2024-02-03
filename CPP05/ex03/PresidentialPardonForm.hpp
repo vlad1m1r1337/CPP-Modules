@@ -12,8 +12,7 @@ public:
 
     PresidentialPardonForm(const PresidentialPardonForm &copy);
     PresidentialPardonForm& operator=(const PresidentialPardonForm &other);
-	PresidentialPardonForm* clone() const;
+	static AForm* clone(string name);
 };
-
 
 #endif

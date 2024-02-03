@@ -28,7 +28,7 @@ RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& copy) : AFor
     *this = copy;
 }
 
-RobotomyRequestForm* RobotomyRequestForm::clone() const {
-	RobotomyRequestForm* form = new RobotomyRequestForm();
+AForm* RobotomyRequestForm::clone(string target) {
+	AForm* form = new RobotomyRequestForm(target);
 	return form;
 }

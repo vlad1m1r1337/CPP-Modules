@@ -12,7 +12,7 @@ public:
 
     ShrubberyCreationForm& operator=(const ShrubberyCreationForm& other);
     ShrubberyCreationForm(const ShrubberyCreationForm& copy);
-	ShrubberyCreationForm* clone() const;
+	static AForm* clone(string name);
 };
 
     void createThree(string name);

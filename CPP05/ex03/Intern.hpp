@@ -5,12 +5,19 @@
 
 class Intern {
 public:
+	class InvalidNameExeption : public exception
+	{
+	public:
+		InvalidNameExeption() throw();
+		~InvalidNameExeption() throw();
+		const char* what() const throw();
+	};
 	Intern();
 	~Intern();
 	Intern(const Intern& copy);
 	Intern& operator=(const Intern& other);
 
-	AForm* makeForm(string name, string target);
+	AForm* makeForm(const string& name, const string& target);
 };
 
 #endif

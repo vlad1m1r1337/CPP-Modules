@@ -53,7 +53,9 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -90,7 +92,9 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -99,31 +103,43 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP05/ex02/AForm.cpp",
+			"path" : "CPP05/ex03/AForm.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP05/ex02/Bureaucrat.cpp",
+			"path" : "CPP05/ex03/Bureaucrat.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP05/ex02/main.cpp",
+			"path" : "CPP05/ex03/Intern.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP05/ex02/PresidentialPardonForm.cpp",
+			"path" : "CPP05/ex03/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP05/ex02/RobotomyRequestForm.cpp",
+			"path" : "CPP05/ex03/PresidentialPardonForm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "CPP05/ex03/RobotomyRequestForm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "CPP05/ex03/ShrubberyCreationForm.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -80,31 +80,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.hpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.hpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.hpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.hpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.cpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.hpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.cpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.hpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/main.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
 		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CMakeLists.txt">

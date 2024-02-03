@@ -54,7 +54,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat &bur) {
     createThree(AForm::getFormName());
 }
 
-ShrubberyCreationForm* ShrubberyCreationForm::clone() const {
-    ShrubberyCreationForm* form = new ShrubberyCreationForm();
+AForm* ShrubberyCreationForm::clone(string name) {
+    AForm* form = new ShrubberyCreationForm(name);
     return form;
 }

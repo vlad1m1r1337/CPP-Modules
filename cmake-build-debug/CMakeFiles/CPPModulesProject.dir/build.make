@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/FB9D9D78-1737-4534-A830-C9CD8401AF78/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6265EC1C-17B9-48AE-9BD2-47531E09649D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/FB9D9D78-1737-4534-A830-C9CD8401AF78/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/6265EC1C-17B9-48AE-9BD2-47531E09649D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,95 +69,127 @@ include CMakeFiles/CPPModulesProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPPModulesProject.dir/flags.make
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/AForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/AForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/Bureaucrat.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Bureaucrat.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/main.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/Intern.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/main.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/main.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/PresidentialPardonForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/main.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex02/RobotomyRequestForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/PresidentialPardonForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/RobotomyRequestForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.cpp
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.cpp > CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP05/ex03/ShrubberyCreationForm.cpp -o CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s
 
 # Object files for target CPPModulesProject
 CPPModulesProject_OBJECTS = \
-"CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o" \
-"CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o" \
-"CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o" \
-"CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o" \
-"CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o"
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o"
 
 # External object files for target CPPModulesProject
 CPPModulesProject_EXTERNAL_OBJECTS =
 
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex02/AForm.cpp.o
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex02/Bureaucrat.cpp.o
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex02/main.cpp.o
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex02/PresidentialPardonForm.cpp.o
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex02/RobotomyRequestForm.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o
 CPPModulesProject: CMakeFiles/CPPModulesProject.dir/build.make
 CPPModulesProject: CMakeFiles/CPPModulesProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CPPModulesProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CPPModulesProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPPModulesProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

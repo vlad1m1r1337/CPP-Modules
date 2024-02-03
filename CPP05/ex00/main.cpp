@@ -4,7 +4,7 @@ int main() {
     try {
         Bureaucrat bur_error("Tom", 150);
         cout << bur_error;
-        Bureaucrat bur_norm("Ed", 1);
+        Bureaucrat bur_norm("Ed", 5);
         cout << bur_norm;
         bur_norm.decrement();
         cout << bur_norm;

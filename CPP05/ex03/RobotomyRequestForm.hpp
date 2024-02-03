@@ -12,7 +12,7 @@ public:
 
     RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
     RobotomyRequestForm(const RobotomyRequestForm &copy);
-	RobotomyRequestForm* clone() const;
+	static AForm* clone(string target);
 };
 
 

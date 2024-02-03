@@ -30,7 +30,7 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &cop
     *this = copy;
 }
 
-PresidentialPardonForm* PresidentialPardonForm::clone() const {
-	PresidentialPardonForm* form = new PresidentialPardonForm();
+AForm* PresidentialPardonForm::clone(string name) {
+	AForm* form = new PresidentialPardonForm(name);
 	return form;
 }

@@ -3,6 +3,14 @@
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 
+Intern::InvalidNameExeption::InvalidNameExeption() throw() {}
+Intern::InvalidNameExeption::~InvalidNameExeption() throw() {}
+
+const char* Intern::InvalidNameExeption::what() const throw() {
+	const char* message = "invalid form name";
+	return message;
+}
+
 Intern::Intern() {}
 
 Intern::~Intern() {}
@@ -12,21 +20,21 @@ Intern::Intern(const Intern& copy) {
 }
 
 Intern& Intern::operator=(const Intern &other) {
+	(void)other;
 	return *this;
 }
 
-AForm* Intern::makeForm(string name, string target) {
-	string forms[3] = {"ShrubberyCreationForm", "RobotomyRequestForm", "PresidentialPardonForm"};
-	void (AForm::*arr_forms[3])(void) = {&ShrubberyCreationForm::clone, &RobotomyRequestForm::clone, &PresidentialPardonForm::clone};
-	for (int i = 0; i < 2; i++) {
-		if (name == "shrubbery creation") {
-			(this->*arr_forms[0])();
-		}
-		if (name == "robotomy request") {
-			(this->*arr_forms[1])();
-		}
-		if (name == "presidental pardon") {
-			(this->*arr_forms[2])();
-		}
+AForm* Intern::makeForm(const string &name, const string &target) {
+	string forms[3] = {"shrubbery request", "robotomy request", "presidental pardon"};
+	AForm* (*arr_forms[3])(string name) = {&ShrubberyCreationForm::clone, &RobotomyRequestForm::clone, &PresidentialPardonForm::clone};
+	int i = 0;
+	for (; (i < 3) && name != forms[i]; i++);
+	if (i == 3) {
+		cout << "couldn't create " << name << endl;
+		throw InvalidNameExeption();
+	}
+	else {
+		cout << "Intern creates " << name << endl;
+		return (*arr_forms[i])(target);
 	}
 }
