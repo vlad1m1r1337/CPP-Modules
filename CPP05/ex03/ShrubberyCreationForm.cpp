@@ -3,9 +3,7 @@
 
 ShrubberyCreationForm::ShrubberyCreationForm() : AForm("name", 145, 137) {}
 
-ShrubberyCreationForm::ShrubberyCreationForm(const string &target) : AForm(target, 145, 137) {}\
-
-ShrubberyCreationForm::~ShrubberyCreationForm() {}
+ShrubberyCreationForm::ShrubberyCreationForm(const string &target) : AForm(target, 145, 137) {}
 
 ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationForm& other) {
     if (&other != this) {
@@ -52,6 +50,10 @@ void ShrubberyCreationForm::execute(const Bureaucrat &bur) const {
 		return ;
     }
     createThree(AForm::getFormName());
+}
+
+ShrubberyCreationForm::~ShrubberyCreationForm() {
+	cout << "lol" << endl;
 }
 
 AForm* ShrubberyCreationForm::clone(string name) {

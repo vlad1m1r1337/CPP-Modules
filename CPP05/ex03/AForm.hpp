@@ -33,7 +33,7 @@ public:
 	AForm();
 	AForm(const string &name, const int sign_grade, const int exec_grade);
 
-	 virtual ~AForm();
+	~AForm();
 
 	void beSigned(const Bureaucrat &bur);
 	virtual void execute(const Bureaucrat &bur) const = 0;
