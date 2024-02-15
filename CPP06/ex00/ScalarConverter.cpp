@@ -84,32 +84,24 @@ void convert_to_double(const string param) {
 	double doubleValue;
 
 	if (iss_double >> doubleValue) {
-		std::cout << "double: " << (doubleValue) << endl;
+		std::cout << "double: " << static_cast<double >(doubleValue) << endl;
 	} else {
 		std::cerr << "Conversion double failed: Invalid input" << std::endl;
 	}
 }
 
 void main_casting(const string param) {
-	int type = define_type(param);
-	switch (type) {
-		case CHAR:
-			cast_with_char(param);
-		case INT:
-			cast_with_int(param);
-		case FLOAT:
-			cast_with_float(param);
-		case DOUBLE:
-			cast_with_double(param);
-	}
+	convert_char_int(param);
+	convert_to_float(param);
+	convert_to_double(param);
 }
 
 void ScalarConverter::convert(string param) {
 
 	literals_check(param);
-	if (param[param.length()- 1] == 'f') {
-		param[param.length()- 1] = '\0';
-	}
+//	if (param[param.length()- 1] == 'f') {
+//		param[param.length()- 1] = '\0';
+//	}
 	main_casting(param);
 }
 
