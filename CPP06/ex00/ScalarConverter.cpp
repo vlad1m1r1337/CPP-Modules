@@ -1,4 +1,5 @@
 #include "ScalarConverter.hpp"
+#include "Error.hpp"
 
 void literals_check(const string param) {
 	if (param == "nan") {
@@ -35,74 +36,26 @@ void literals_check(const string param) {
 	}
 }
 
-void print_char(int intValue) {
-	if (intValue > 127) {
-		cout << "char: impossible" << endl;
-		return ;
-	}
-	else if (intValue <= 32) {
-		cout << "char: Non displayable" << endl;
-		return ;
-	}
-	cout << "some" << endl;
-	std::cout << "char: \'" << static_cast<char>(intValue) << "\'" << endl;
+int define_types(string param) {
+	if (is_char(param)) {return CHAR;}
+	else if (is_int(param)) {return INT;}
+	else if (is_double(param)) {return DOUBLE;}
+	else if (is_float(param)) {return FLOAT;}
+	else {return -1;}
+
 }
 
-void print_int(int intValue) {
-	std::cout << "int: " << intValue << std::endl;
-}
 
-void convert_char_int(const string param) {
-	std::istringstream iss(param);
-	int intValue;
 
-	if (int_check(param.c_str())) {
-		std::cout << "char: impossible\n"
-					 "int: impossible"
-					 <<  std::endl;
-		return;
-	}
-	if (iss >> intValue) {
-		print_char(intValue);
-		print_int(intValue);
-	}
-}
-
-void convert_to_float(const string param) {
-	std::istringstream iss_float(param);
-	float floatValue;
-
-	if (iss_float >> floatValue) {
-		std::cout << "float: " << (floatValue) << "f" << endl;
-	} else {
-		std::cerr << "Conversion float failed: Invalid input" << std::endl;
-	}
-}
-
-void convert_to_double(const string param) {
-	std::istringstream iss_double(param);
-	double doubleValue;
-
-	if (iss_double >> doubleValue) {
-		std::cout << "double: " << static_cast<double >(doubleValue) << endl;
-	} else {
-		std::cerr << "Conversion double failed: Invalid input" << std::endl;
-	}
-}
-
-void main_casting(const string param) {
-	convert_char_int(param);
-	convert_to_float(param);
-	convert_to_double(param);
-}
-
-void ScalarConverter::convert(string param) {
-
+void ScalarConverter::convert(string param)
+{
+	int type;
 	literals_check(param);
-//	if (param[param.length()- 1] == 'f') {
-//		param[param.length()- 1] = '\0';
-//	}
-	main_casting(param);
+	type = define_types(param);
+	if (type == -1) {
+		throw Error();
+	}
+	cout << "type " << type << endl;
 }
 
 ScalarConverter::ScalarConverter() {}

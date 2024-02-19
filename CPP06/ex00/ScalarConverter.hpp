@@ -4,17 +4,16 @@
 #include "iostream"
 #include <sstream>
 
-#define CHAR 0
-#define INT 1
-#define FLOAT 2
-#define \
-3
-
 using std::string;
 using std::cout;
 using std::cin;
 using std::endl;
-//using std::
+	enum Types {
+		CHAR,
+		INT,
+		FLOAT,
+		DOUBLE,
+	};
 
 class ScalarConverter {
 public:
@@ -28,6 +27,18 @@ public:
 	void literals_check(const string param);
 	void main_casting(const string param);
 	int	int_check (const char *str);
+	int symbol_check(string param);
 
+	//CHAR
+	int is_char(string param);
+
+	//INT
+	int is_int(string param);
+
+	//DOUBLE
+	int is_double(string param);
+
+	//FLOAT
+	int is_float(string param);
 
 #endif
