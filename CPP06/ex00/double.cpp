@@ -3,8 +3,11 @@
 
 int symbol_check_double(string param) {
 	int i = -1;
-	while(param[i]) {
-		if (!isdigit(param[i])) {
+	if (param[0] == '-') {
+		i++;
+	}
+	while(param[++i]) {
+		if (!isdigit(param[i]) && param[i] != '.') {
 			return 0;
 		}
 	}

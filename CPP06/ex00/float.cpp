@@ -6,10 +6,14 @@ int symbol_check_float(string param) {
 	if (param[param.length() - 1] != 'f') {
 		return 0;
 	}
-	while(param[++i - 1]) {
-		if (!isdigit(param[i])) {
+	if (param[0] == '-') {
+		i++;
+	}
+	while(static_cast<unsigned long>(i) < param.length() - 1) {
+		if (!isdigit(param[i]) && param[i] != '.') {
 			return 0;
 		}
+		i++;
 	}
 	return 1;
 }

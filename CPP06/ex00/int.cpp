@@ -29,7 +29,9 @@ int	size_check(const char *str)
 	return 1;
 }
 
-int are_after_dot_zeros(string param, int i) {
+int are_after_dot_zeros(string param) {
+	int i = -1;
+	while(param[++i] != '.');
 	while(param[++i]) {
 		if (param[i] != '0') {
 			return 0;
@@ -38,10 +40,10 @@ int are_after_dot_zeros(string param, int i) {
 	return 1;
 }
 
-int dot_finder(string param){
+int dot_finder(string param) {
 	int i = 0;
 	while(param[i]) {
-		if (param[i] == '.' && !are_after_dot_zeros(param, i)) {
+		if (param[i] == '.') {
 			return 1;
 		}
 		i++;
@@ -51,8 +53,11 @@ int dot_finder(string param){
 
 int symbol_check(string param) {
 	int i = -1;
-	while(param[i]) {
-		if (!isdigit(param[i]) || param[i] == '.') {
+	if (param[0] == '-') {
+		i++;
+	}
+	while(param[++i]) {
+		if (!isdigit(param[i]) && param[i] != '.') {
 			return 0;
 		}
 	}
@@ -64,7 +69,9 @@ int is_int(string param) {
 		return 0;
 	}
 	if(dot_finder(param)) {
-		return 0;
+		if (!are_after_dot_zeros(param)) {
+			return 0;
+		}
 	}
 	if (size_check(param.c_str())) {
 		return 1;

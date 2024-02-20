@@ -3,6 +3,7 @@
 
 #include "iostream"
 #include <sstream>
+#include <stdlib.h>
 
 using std::string;
 using std::cout;
@@ -17,7 +18,7 @@ using std::endl;
 
 class ScalarConverter {
 public:
-	static void convert(const string param);
+	static void convert(const string& param);
 
 	ScalarConverter();
 	~ScalarConverter();
