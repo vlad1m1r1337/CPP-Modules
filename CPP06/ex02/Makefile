@@ -1,14 +1,14 @@
 NAME = convert
-SRCS = main.cpp Serializer.cpp Data.cpp
+SRCS = main.cpp
 OBJDIR = obj/
 OBJS = $(SRCS:%.cpp=$(OBJDIR)%.o)
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-HEADER = Serializer.hpp Data.hpp
+#HEADER = A.hpp B.hpp C.hpp
 
 all: $(NAME)
 
-$(OBJDIR)%.o: %.cpp $(HEADER)
+$(OBJDIR)%.o: %.cpp #$(HEADER)
 	@$(CPP) $(CPPFLAGS) -c $< -o $@
 
 $(OBJDIR):
