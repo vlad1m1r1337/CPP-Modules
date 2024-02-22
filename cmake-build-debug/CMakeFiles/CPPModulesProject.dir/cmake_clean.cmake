@@ -1,20 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/AForm.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Bureaucrat.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/Intern.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/PresidentialPardonForm.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/RobotomyRequestForm.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP05/ex03/main.cpp.o.d"
-  "CPPModulesProject"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex00/main.cpp.obj"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex00/main.cpp.obj.d"
+  "CPPModulesProject.exe"
+  "CPPModulesProject.exe.manifest"
   "CPPModulesProject.pdb"
+  "libCPPModulesProject.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
