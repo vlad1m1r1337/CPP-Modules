@@ -4,6 +4,6 @@ project(CPPModulesProject)
 set(CMAKE_CXX_STANDARD 98)
 
 add_executable(CPPModulesProject
-    CPP07/ex01/main.cpp
-        CPP07/ex01/whatever.hpp
+    CPP07/ex02/main.cpp
+    CPP07/ex02/Array.cpp
 )

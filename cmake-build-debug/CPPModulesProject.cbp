@@ -82,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex01/main.cpp">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex02/Array.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex01/whatever.hpp">
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex02/Array.hpp">
+			<Option target="CPPModulesProject"/>
+		</Unit>
+		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex02/main.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
 		<Unit filename="C:/Users/Hasan/OneDrive/CPP-Modules/CMakeLists.txt">

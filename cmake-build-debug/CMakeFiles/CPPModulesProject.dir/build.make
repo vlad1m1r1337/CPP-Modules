@@ -68,33 +68,49 @@ include CMakeFiles/CPPModulesProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPPModulesProject.dir/flags.make
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex01/main.cpp
-CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP07\ex01\main.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP07\ex01\main.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex01\main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex02/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP07\ex02\main.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP07\ex02\main.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\main.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.i"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex01\main.cpp > CMakeFiles\CPPModulesProject.dir\CPP07\ex01\main.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\main.cpp > CMakeFiles\CPPModulesProject.dir\CPP07\ex02\main.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.s"
-	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex01\main.cpp -o CMakeFiles\CPPModulesProject.dir\CPP07\ex01\main.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\main.cpp -o CMakeFiles\CPPModulesProject.dir\CPP07\ex02\main.cpp.s
+
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj: C:/Users/Hasan/OneDrive/CPP-Modules/CPP07/ex02/Array.cpp
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj -MF CMakeFiles\CPPModulesProject.dir\CPP07\ex02\Array.cpp.obj.d -o CMakeFiles\CPPModulesProject.dir\CPP07\ex02\Array.cpp.obj -c C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\Array.cpp
+
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\Array.cpp > CMakeFiles\CPPModulesProject.dir\CPP07\ex02\Array.cpp.i
+
+CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s"
+	"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hasan\OneDrive\CPP-Modules\CPP07\ex02\Array.cpp -o CMakeFiles\CPPModulesProject.dir\CPP07\ex02\Array.cpp.s
 
 # Object files for target CPPModulesProject
 CPPModulesProject_OBJECTS = \
-"CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj"
+"CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj" \
+"CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj"
 
 # External object files for target CPPModulesProject
 CPPModulesProject_EXTERNAL_OBJECTS =
 
-CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj
+CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/build.make
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/linkLibs.rsp
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/objects1.rsp
 CPPModulesProject.exe: CMakeFiles/CPPModulesProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CPPModulesProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPPModulesProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPPModulesProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
