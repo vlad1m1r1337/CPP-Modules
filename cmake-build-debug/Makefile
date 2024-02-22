@@ -128,29 +128,29 @@ CPPModulesProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/build
 .PHONY : CPPModulesProject/fast
 
-CPP07/ex00/main.obj: CPP07/ex00/main.cpp.obj
-.PHONY : CPP07/ex00/main.obj
+CPP07/ex01/main.obj: CPP07/ex01/main.cpp.obj
+.PHONY : CPP07/ex01/main.obj
 
 # target to build an object file
-CPP07/ex00/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex00/main.cpp.obj
-.PHONY : CPP07/ex00/main.cpp.obj
+CPP07/ex01/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.obj
+.PHONY : CPP07/ex01/main.cpp.obj
 
-CPP07/ex00/main.i: CPP07/ex00/main.cpp.i
-.PHONY : CPP07/ex00/main.i
+CPP07/ex01/main.i: CPP07/ex01/main.cpp.i
+.PHONY : CPP07/ex01/main.i
 
 # target to preprocess a source file
-CPP07/ex00/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex00/main.cpp.i
-.PHONY : CPP07/ex00/main.cpp.i
+CPP07/ex01/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.i
+.PHONY : CPP07/ex01/main.cpp.i
 
-CPP07/ex00/main.s: CPP07/ex00/main.cpp.s
-.PHONY : CPP07/ex00/main.s
+CPP07/ex01/main.s: CPP07/ex01/main.cpp.s
+.PHONY : CPP07/ex01/main.s
 
 # target to generate assembly for a file
-CPP07/ex00/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex00/main.cpp.s
-.PHONY : CPP07/ex00/main.cpp.s
+CPP07/ex01/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex01/main.cpp.s
+.PHONY : CPP07/ex01/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CPPModulesProject
-	@echo ... CPP07/ex00/main.obj
-	@echo ... CPP07/ex00/main.i
-	@echo ... CPP07/ex00/main.s
+	@echo ... CPP07/ex01/main.obj
+	@echo ... CPP07/ex01/main.i
+	@echo ... CPP07/ex01/main.s
 .PHONY : help
 
 
