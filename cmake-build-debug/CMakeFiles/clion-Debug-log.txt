@@ -1,4 +1,4 @@
-"D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Hasan\OneDrive\CPP-Modules -B C:\Users\Hasan\OneDrive\CPP-Modules\cmake-build-debug
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/Hasan/OneDrive/CPP-Modules/cmake-build-debug
+/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/vgribkov/Desktop/CPP__Modules -B /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug

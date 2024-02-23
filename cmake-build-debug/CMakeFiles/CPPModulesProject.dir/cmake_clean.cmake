@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.obj.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.obj.d"
-  "CPPModulesProject.exe"
-  "CPPModulesProject.exe.manifest"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o.d"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o"
+  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o.d"
+  "CPPModulesProject"
   "CPPModulesProject.pdb"
-  "libCPPModulesProject.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
