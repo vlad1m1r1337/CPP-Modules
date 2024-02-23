@@ -11,15 +11,15 @@ using std::string;
 using std::ostream;
 
 class Serializer {
-public:
-	static uintptr_t serialize(Data* ptr);
-	static Data* deserialize(uintptr_t raw);
-	static Data* wrongdeserialize(uintptr_t raw);
-
+private:
 	Serializer();
 	~Serializer();
 	Serializer(const Serializer& other);
 	Serializer& operator=(const Serializer& other);
+public:
+	static uintptr_t serialize(Data* ptr);
+	static Data* deserialize(uintptr_t raw);
+	static Data* wrongdeserialize(uintptr_t raw);
 };
 
 #endif

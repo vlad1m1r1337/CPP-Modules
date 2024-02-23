@@ -1,5 +1,5 @@
 NAME = convert
-SRCS = main.cpp ScalarConverter.cpp helpers.cpp char.cpp int.cpp double.cpp float.cpp Error.cpp
+SRCS = main.cpp ScalarConverter.cpp char.cpp int.cpp double.cpp float.cpp Error.cpp
 OBJDIR = obj/
 OBJS = $(SRCS:%.cpp=$(OBJDIR)%.o)
 CPP = c++

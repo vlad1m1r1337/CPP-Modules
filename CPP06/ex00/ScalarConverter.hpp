@@ -17,13 +17,13 @@ using std::endl;
 	};
 
 class ScalarConverter {
-public:
-	static void convert(const string& param);
-
+private:
 	ScalarConverter();
 	~ScalarConverter();
 	ScalarConverter(const ScalarConverter& copy);
 	ScalarConverter &operator=(ScalarConverter const &other);
+public:
+	static void convert(const string& param);
 };
 	void literals_check(const string param);
 	void main_casting(const string param);

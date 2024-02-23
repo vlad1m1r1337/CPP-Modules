@@ -10,6 +10,14 @@ void literals_check(const string param) {
 				<< endl;
 		exit(0);
 	}
+	if (param == "nanf") {
+		cout << "char: impossible\n"
+				"int: impossible\n"
+				"float: nanf\n"
+				"double: nan"
+			 << endl;
+		exit(0);
+	}
 	else if (param == "0") {
 		cout << "char: Non displayable\n"
 				"int: 0\n"
@@ -143,7 +151,6 @@ void ScalarConverter::convert(const string& param)
 	if (type == -1) {
 		throw Error();
 	}
-//	cout << "type " << type << endl;
 	casting(param, type);
 }
 
