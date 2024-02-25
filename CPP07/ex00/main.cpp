@@ -21,16 +21,3 @@ int main( void ) {
     return 0;
 }
 
-//int main (void) {
-//    string a = "bb";
-//    string b = "aaaa";
-////    cout << "a: " << a << " b: " << b << endl;
-////    ::swap(a,b);
-////    cout << "a: " << a << " b: " << b << endl;
-//
-//    cout << "a: " << a << " b: " << b << endl;
-//    cout << "max( a, b ) = " << *::max( &a, &b ) << endl;
-//    cout << "min( a, b ) = " << *::min( &a, &b ) << endl;
-//
-//
-//}
