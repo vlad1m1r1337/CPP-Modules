@@ -6,11 +6,9 @@
 #define CPPMODULESPROJECT_SPAN_HPP
 
 
-
 class Span {
 
 };
-
 
 
 #endif //CPPMODULESPROJECT_SPAN_HPP
