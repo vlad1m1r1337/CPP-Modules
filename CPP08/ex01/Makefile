@@ -1,14 +1,14 @@
-NAME = executable
-SRCS = main.cpp
+NAME = ex01
+SRCS = main.cpp Span.cpp
 OBJDIR = obj/
 OBJS = $(SRCS:%.cpp=$(OBJDIR)%.o)
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-#HEADER = A.hpp B.hpp C.hpp
+HEADER = Span.hpp
 
 all: $(NAME)
 
-$(OBJDIR)%.o: %.cpp #$(HEADER)
+$(OBJDIR)%.o: %.cpp $(HEADER)
 	@$(CPP) $(CPPFLAGS) -c $< -o $@
 
 $(OBJDIR):
