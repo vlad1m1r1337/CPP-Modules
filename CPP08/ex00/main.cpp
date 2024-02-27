@@ -8,39 +8,32 @@ int main()
 	for (unsigned long i = 0; i < numbers.size(); i++)
 		std::cout << numbers[i] << " ";
 	cout << std::endl;
-	cout << "capacity: " << numbers.capacity() << endl;
 
-	numbers.clear();
+	try {
+		std::vector<int>::iterator it = easyfind(numbers, 11);
+		std::cout << "Value found " << *it << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Value not found" << std::endl;
+	}
 
-	numbers.push_back(228);
-	for (unsigned long i = 0; i < numbers.size(); i++)
-		std::cout << numbers[i] << " ";
-	cout << "capacity: " << numbers.capacity() << endl;
-//	try {
-//		std::vector<int>::iterator it = easyfind(numbers, 11);
-//		std::cout << "Value found " << *it << std::endl;
-//	} catch (std::exception &e) {
-//		std::cout << "Value not found" << std::endl;
-//	}
-//
-//	try {
-//		std::vector<int>::iterator it = easyfind(numbers, 33);
-//		std::cout << "Value found " << *it << std::endl;
-//	} catch (std::exception &e) {
-//		std::cout << "Value not found" << std::endl;
-//	}
-//
-//	try {
-//		std::vector<int>::iterator it = easyfind(numbers, 55);
-//		std::cout << "Value found " << *it << std::endl;
-//	} catch (std::exception &e) {
-//		std::cout << "Value not found" << std::endl;
-//	}
-//
-//	try {
-//		std::vector<int>::iterator it = easyfind(numbers, -1);
-//		std::cout << "Value found " << *it << std::endl;
-//	} catch (std::exception &e) {
-//		std::cout << "Value not found" << std::endl;
-//	}
+	try {
+		std::vector<int>::iterator it = easyfind(numbers, 33);
+		std::cout << "Value found " << *it << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Value not found" << std::endl;
+	}
+
+	try {
+		std::vector<int>::iterator it = easyfind(numbers, 55);
+		std::cout << "Value found " << *it << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Value not found" << std::endl;
+	}
+
+	try {
+		std::vector<int>::iterator it = easyfind(numbers, -1);
+		std::cout << "Value found " << *it << std::endl;
+	} catch (std::exception &e) {
+		std::cout << "Value not found" << std::endl;
+	}
 }

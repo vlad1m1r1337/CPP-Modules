@@ -4,6 +4,9 @@
 #include <vector>
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
 class Span {
 private:
 	unsigned int _n;
@@ -13,9 +16,11 @@ public:
 	Span(const Span &span);
 	Span &operator=(const Span &span);
 	~Span();
+
 	void addNumber(int number);
-//	int shortestSpan();
-//	int longestSpan();
+	int shortestSpan();
+	int longestSpan();
+
 	std::vector<int> getArr() const;
 };
 
