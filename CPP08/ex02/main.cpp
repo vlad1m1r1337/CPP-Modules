@@ -1,19 +1,40 @@
 #include "MutantStack.hpp"
-#include <stack>
 
 int main() {
-	std::stack<int> st;
+    {
+        MutantStack<int> mstack;
 
-	st.push(1);
-	st.push(2);
-	st.push(3);
-	st.push(4);
-	st.push(5);
+        mstack.push(1);
+        mstack.push(2);
+        mstack.push(3);
+        mstack.push(4);
+        mstack.push(5);
 
+        MutantStack<int>::iterator itb = mstack.begin();
+        MutantStack<int>::iterator ite = mstack.end();
 
-	while(!st.empty()) {
-		cout << st.top() << endl;
-		st.pop();
-	}
-	return 0;
+        while (itb != ite) {
+            cout << *itb << endl;
+            ++itb;
+        }
+    }
+    cout << endl;
+    {
+        MutantStack<int> mstack;
+
+        mstack.push(1);
+        mstack.push(2);
+        mstack.push(3);
+        mstack.push(4);
+        mstack.push(5);
+
+        MutantStack<int>::reverse_iterator itrb = mstack.rbegin();
+        MutantStack<int>::reverse_iterator itre = mstack.rend();
+
+        while (itrb != itre) {
+            cout << *itrb << endl;
+            ++itrb;
+        }
+    }
+    return 0;
 }

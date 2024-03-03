@@ -2,7 +2,6 @@
 
 Span::Span(unsigned int n) {
 	_n = n;
-
 }
 
 Span::~Span() {}
@@ -58,7 +57,7 @@ std::vector<int> Span::getArr() const {
 
 std::ostream& operator<<(std::ostream &ostream, const Span &obj) {
 	unsigned int size = obj.getArr().size();
-	for (int i = 0; i < size; i++) {
+	for (unsigned int i = 0; i < size; i++) {
 		ostream << obj.getArr()[i] << " ";
 	}
 	ostream << std::endl;

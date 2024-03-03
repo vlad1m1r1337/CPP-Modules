@@ -2,6 +2,7 @@
 #define CPPMODULESPROJECT_SPAN_HPP
 
 #include <vector>
+#include <algorithm>
 #include <iostream>
 
 using std::cout;
