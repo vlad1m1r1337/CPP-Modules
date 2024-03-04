@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,44 +69,44 @@ include CMakeFiles/CPPModulesProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPPModulesProject.dir/flags.make
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp > CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp > CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp -o CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp -o CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.s
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o: CMakeFiles/CPPModulesProject.dir/flags.make
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o: /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o: CMakeFiles/CPPModulesProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o -MF CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o.d -o CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o -c /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp > CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp > CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.i
 
-CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp -o CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s
+CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp -o CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.s
 
 # Object files for target CPPModulesProject
 CPPModulesProject_OBJECTS = \
-"CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o" \
-"CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o"
+"CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o" \
+"CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o"
 
 # External object files for target CPPModulesProject
 CPPModulesProject_EXTERNAL_OBJECTS =
 
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o
-CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o
+CPPModulesProject: CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o
 CPPModulesProject: CMakeFiles/CPPModulesProject.dir/build.make
 CPPModulesProject: CMakeFiles/CPPModulesProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPPModulesProject"

@@ -80,13 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.hpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.hpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
-		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp">
+		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp">
 			<Option target="CPPModulesProject"/>
 		</Unit>
 		<Unit filename="/Users/vgribkov/Desktop/CPP__Modules/CMakeLists.txt">

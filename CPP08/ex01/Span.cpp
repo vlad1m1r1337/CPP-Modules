@@ -12,9 +12,8 @@ Span::Span(const Span &copy) {
 
 Span &Span::operator=(const Span &other) {
 	if (this != &other) {
-		this->_n = other._n;
-		this->_arr = other._arr;
-		*this = other;
+		_n = other._n;
+		_arr = other._arr;
 	}
 	return *this;
 }

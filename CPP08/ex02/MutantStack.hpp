@@ -35,11 +35,12 @@ public:
 		*this = copy;
 	}
 	MutantStack& operator=(const MutantStack<T> &other) {
-		*this = other;
+		if(other != *this)
+		{
+			this->c = other.c;
+		}
+		return *this;
 	}
-
-
 };
-
 
 #endif

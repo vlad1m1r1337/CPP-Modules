@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/vgribkov/Desktop/CPP__Modules -B /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug
--- Configuring done (1.2s)
--- Generating done (0.1s)
+/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/vgribkov/Desktop/CPP__Modules -B /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
 -- Build files have been written to: /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug

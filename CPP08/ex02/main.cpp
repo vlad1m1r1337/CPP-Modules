@@ -1,7 +1,10 @@
 #include "MutantStack.hpp"
 
+typedef std::vector<int> container_type;
+
 int main() {
     {
+        container_type a;
         MutantStack<int> mstack;
 
         mstack.push(1);

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/Array.cpp" "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o.d"
-  "/Users/vgribkov/Desktop/CPP__Modules/CPP07/ex02/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o.d"
+  "/Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/Span.cpp" "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o.d"
+  "/Users/vgribkov/Desktop/CPP__Modules/CPP08/ex01/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o.d"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o"
-  "CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o.d"
+  "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o"
+  "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o.d"
+  "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o"
+  "CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o.d"
   "CPPModulesProject"
   "CPPModulesProject.pdb"
 )

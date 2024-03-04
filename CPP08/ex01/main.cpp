@@ -35,7 +35,6 @@ int main() {
 		std::cout << "span: " << sp;
 		cout << "longestSpan: " << sp.longestSpan() << endl;
 		cout << "shortestSpan: " << sp.shortestSpan() << endl;
-		cout << endl;
 	}
 	return 0;
 }

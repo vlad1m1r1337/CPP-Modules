@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/vgribkov/Desktop/CPP__Modules/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/79536F3E-8E83-44E8-8D63-B0F8C52AE69A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n000chtr00346p/T/AppTranslocation/365CDE43-A6F2-4CA2-AEE4-D88F0AF7646C/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -129,53 +129,53 @@ CPPModulesProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/build
 .PHONY : CPPModulesProject/fast
 
-CPP07/ex02/Array.o: CPP07/ex02/Array.cpp.o
-.PHONY : CPP07/ex02/Array.o
+CPP08/ex01/Span.o: CPP08/ex01/Span.cpp.o
+.PHONY : CPP08/ex01/Span.o
 
 # target to build an object file
-CPP07/ex02/Array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.o
-.PHONY : CPP07/ex02/Array.cpp.o
+CPP08/ex01/Span.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.o
+.PHONY : CPP08/ex01/Span.cpp.o
 
-CPP07/ex02/Array.i: CPP07/ex02/Array.cpp.i
-.PHONY : CPP07/ex02/Array.i
+CPP08/ex01/Span.i: CPP08/ex01/Span.cpp.i
+.PHONY : CPP08/ex01/Span.i
 
 # target to preprocess a source file
-CPP07/ex02/Array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.i
-.PHONY : CPP07/ex02/Array.cpp.i
+CPP08/ex01/Span.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.i
+.PHONY : CPP08/ex01/Span.cpp.i
 
-CPP07/ex02/Array.s: CPP07/ex02/Array.cpp.s
-.PHONY : CPP07/ex02/Array.s
+CPP08/ex01/Span.s: CPP08/ex01/Span.cpp.s
+.PHONY : CPP08/ex01/Span.s
 
 # target to generate assembly for a file
-CPP07/ex02/Array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/Array.cpp.s
-.PHONY : CPP07/ex02/Array.cpp.s
+CPP08/ex01/Span.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/Span.cpp.s
+.PHONY : CPP08/ex01/Span.cpp.s
 
-CPP07/ex02/main.o: CPP07/ex02/main.cpp.o
-.PHONY : CPP07/ex02/main.o
+CPP08/ex01/main.o: CPP08/ex01/main.cpp.o
+.PHONY : CPP08/ex01/main.o
 
 # target to build an object file
-CPP07/ex02/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.o
-.PHONY : CPP07/ex02/main.cpp.o
+CPP08/ex01/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.o
+.PHONY : CPP08/ex01/main.cpp.o
 
-CPP07/ex02/main.i: CPP07/ex02/main.cpp.i
-.PHONY : CPP07/ex02/main.i
+CPP08/ex01/main.i: CPP08/ex01/main.cpp.i
+.PHONY : CPP08/ex01/main.i
 
 # target to preprocess a source file
-CPP07/ex02/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.i
-.PHONY : CPP07/ex02/main.cpp.i
+CPP08/ex01/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.i
+.PHONY : CPP08/ex01/main.cpp.i
 
-CPP07/ex02/main.s: CPP07/ex02/main.cpp.s
-.PHONY : CPP07/ex02/main.s
+CPP08/ex01/main.s: CPP08/ex01/main.cpp.s
+.PHONY : CPP08/ex01/main.s
 
 # target to generate assembly for a file
-CPP07/ex02/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP07/ex02/main.cpp.s
-.PHONY : CPP07/ex02/main.cpp.s
+CPP08/ex01/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPPModulesProject.dir/build.make CMakeFiles/CPPModulesProject.dir/CPP08/ex01/main.cpp.s
+.PHONY : CPP08/ex01/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CPPModulesProject"
-	@echo "... CPP07/ex02/Array.o"
-	@echo "... CPP07/ex02/Array.i"
-	@echo "... CPP07/ex02/Array.s"
-	@echo "... CPP07/ex02/main.o"
-	@echo "... CPP07/ex02/main.i"
-	@echo "... CPP07/ex02/main.s"
+	@echo "... CPP08/ex01/Span.o"
+	@echo "... CPP08/ex01/Span.i"
+	@echo "... CPP08/ex01/Span.s"
+	@echo "... CPP08/ex01/main.o"
+	@echo "... CPP08/ex01/main.i"
+	@echo "... CPP08/ex01/main.s"
 .PHONY : help
 
 
