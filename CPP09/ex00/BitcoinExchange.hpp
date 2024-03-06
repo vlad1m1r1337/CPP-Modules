@@ -22,12 +22,12 @@ public:
 	BitcoinExchange& operator=(const BitcoinExchange& other);
 
 	void print_map();
-	void add_key_value(string key, string value);
-	void parse_data(BitcoinExchange& btc, char* argv);
-	void parse_key_value(BitcoinExchange& btc, string key, string value);
+	void parse_data(char *argv);
+	void parse_key_value(string key, string value);
 };
 
 std::string trim(const std::string& str);
 int	size_check(const char *str);
-int parse_date(string date);
+int validate_date(string date);
+void	fill_data_map(std::ifstream &file, std::map<string, double> *data_csv);
 #endif

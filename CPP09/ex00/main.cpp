@@ -9,8 +9,19 @@ int main(int argc, char** argv) {
 
 	BitcoinExchange btc;
 
-	btc.parse_data(btc, argv[1]);
-//	btc.print_map();
+	btc.parse_data(argv[1]);
 	return 0;
 }
 
+//int main() {
+//	BitcoinExchange btc;
+//	std::ifstream file("data.csv");
+//	if (!file.is_open()) {
+//		std::cout << "Error: could not open file." << std::endl;
+//		exit(1);
+//	}
+//	std::map<string, double> data_csv;
+//	fill_data_map(file, &data_csv);
+//
+//	return 0;
+//}

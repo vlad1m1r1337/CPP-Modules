@@ -2,6 +2,8 @@
 
 //Orthodox Canonical Form
 
+bool is_valid_date(string year, string month, string day);
+
 BitcoinExchange::BitcoinExchange() {}
 
 BitcoinExchange::~BitcoinExchange() {}
@@ -19,23 +21,18 @@ BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange &other) {
 
 //member functions
 
-void BitcoinExchange::add_key_value(string key, string value) {
-	_btc[key] = atoi(value.c_str());
-}
-
 void BitcoinExchange::print_map() {
 	for (std::map<string, int>::iterator it = _btc.begin(); it != _btc.end(); it++) {
 		std::cout << "Key: " << it->first << ", Value: " << it->second << std::endl;
 	}
 }
 
-void BitcoinExchange::parse_data(BitcoinExchange &btc, char* argv) {
+void BitcoinExchange::parse_data(char *argv) {
 	string line;
 	std::ifstream in(argv);
 	if (in.is_open())
 	{
 		std::getline(in, line);
-		cout << "line: " << line << endl; // "date | value
 		if (line != "date | value") {
 			std::cout << "Error: first line is not 'date | value'." << std::endl;
 			exit(1);
@@ -51,21 +48,83 @@ void BitcoinExchange::parse_data(BitcoinExchange &btc, char* argv) {
 
 			key = trim(key);
 			value = trim(value);
-
-			parse_key_value(btc, key, value);
-			btc.add_key_value(key, value);
+			if (!key.length() || !value.length()) {
+				std::cout << "Error: key or value is empty." << std::endl;
+				continue;
+			}
+			parse_key_value(key, value);
 		}
 	}
 	in.close();
 }
 
-void BitcoinExchange::parse_key_value(BitcoinExchange &btc, string key, string value) {
-	(void)btc;
+void non_existing_date(string key, string value, std::map<string, double> data_csv) {
+	string year_input = key.substr(0, 4);
+	string month_input = key.substr(5, 2);
+	string day_input = key.substr(8, 2);
+
+	for (std::map<string, double>::iterator it = data_csv.begin(); it != data_csv.end(); it++) {
+		double temp;
+		string date = it->first;
+		string year_from_data = date.substr(0, 4);
+		string month_from_data = date.substr(5, 2);
+		string day_from_data = date.substr(8, 2);
+		if (it == data_csv.begin()) {
+			temp = it->second;
+		}
+		if (year_from_data == year_input) {
+			if (month_from_data == month_input) {
+				if (day_input < day_from_data) {
+					cout << (--it)->first << " => " << value << " => " << temp * atof(value.c_str()) << endl;
+					break;
+				}
+			}
+		}
+		temp = it->second;
+	}
+}
+
+void	fill_data_map(std::ifstream &file, std::map<string, double> *data_csv) {
+	string line;
+	std::getline(file, line);
+	while (std::getline(file, line)) {
+		int pos = line.find(",");
+		string date = line.substr(0, pos);
+		string value_from_data = line.substr(pos + 1, line.length() - pos);
+		(*data_csv)[date] = atof(value_from_data.c_str());
+	}
+}
+
+void	output(string key, string value) {
+	(void)key;
+	(void)value;
+	std::ifstream file("data.csv");
+	if (!file.is_open()) {
+		std::cout << "Error: could not open file." << std::endl;
+		exit(1);
+	}
+
+	std::map<string, double> data_csv;
+	fill_data_map(file, &data_csv);
+
+	std::map<string, double>::iterator it = data_csv.find(key);
+
+	if (it != data_csv.end()) {
+		double res = data_csv[key] * atof(value.c_str());
+		cout << key << " => " << value << " => " << res << endl;
+	}
+	else {
+		non_existing_date(key, value, data_csv);
+	}
+	file.close();
+}
+
+void BitcoinExchange::parse_key_value(string key, string value) {
 	if (value[0] == '-') {
 		std::cout << "Error: not a positive number." << std::endl;
 	}
-	else if (parse_date(key) == 0) {
-		std::cout << "Error: bad input => " << value << std::endl;
+	else if (validate_date(key) == 0) {
+		std::cout << "Error: bad input => " << key << std::endl;
 	}
 	else if (value.find_first_not_of(".0123456789") != std::string::npos) {
 		std::cout << "Error: value is not a number." << std::endl;
@@ -78,17 +137,61 @@ void BitcoinExchange::parse_key_value(BitcoinExchange &btc, string key, string v
 	}
 	else
 	{
-		std::cout << "Key: " << key << ", Value: " << value << std::endl;
+		output(key, value);
 	}
 }
 
 //helper functions
 
-int parse_date(string date) {
+int validate_lap_year(string year, string month, string day) {
+	if (atoi(year.c_str()) % 4 == 0) {
+		if (atoi(year.c_str()) % 100 == 0) {
+			if (atoi(year.c_str()) % 400 == 0) {
+				if (atoi(month.c_str()) == 2 && atoi(day.c_str()) > 29) {
+					return 1;
+				}
+			}
+			else {
+				if (atoi(month.c_str()) == 2 && atoi(day.c_str()) > 28) {
+					return 1;
+				}
+			}
+		}
+		else {
+			if (atoi(month.c_str()) == 2 && atoi(day.c_str()) > 29) {
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+
+int validate_date(string date) {
 	size_t first_dash = date.find("-");
 
 	string year = date.substr(0, first_dash);
-	if (year.size() != 4) {
+	string month = date.substr(first_dash + 1, 2);
+	string day = date.substr(first_dash + 4, 2);
+
+	if (year.length() != 4 || month.length() != 2 || day.length() != 2) {
+		return 0;
+	}
+	if (year.find_first_not_of("0123456789") != std::string::npos || month.find_first_not_of("0123456789") != std::string::npos || day.find_first_not_of("0123456789") != std::string::npos) {
+		return 0;
+	}
+	if (atoi(year.c_str()) < 2009) {
+		return 0;
+	}
+	if (year == "2009" && month == "01" && day == "01") {
+		return 0;
+	}
+	if (atoi(month.c_str()) < 1 || atoi(month.c_str()) > 12) {
+		return 0;
+	}
+	if (atoi(day.c_str()) < 1 || atoi(day.c_str()) > 31) {
+		return 0;
+	}
+	if (validate_lap_year(year, month, day)) {
 		return 0;
 	}
 	return 1;
