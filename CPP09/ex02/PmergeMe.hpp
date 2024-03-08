@@ -11,12 +11,13 @@ using std::string;
 
 class PmergeMe {
 private:
-	std::vector<unsigned > _v;
+	std::vector<std::pair<unsigned, unsigned > > _v;
 public:
 	PmergeMe();
 	~PmergeMe();
 	PmergeMe(const PmergeMe &src);
 	PmergeMe &operator=(const PmergeMe &src);
+	void validateArgs(int ac, char **av);
 	void parseArgs(int ac, char **av);
 };
 

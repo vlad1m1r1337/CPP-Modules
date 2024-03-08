@@ -5,6 +5,7 @@ int main(int ac, char **av) {
 	(void)av;
 	try {
 		PmergeMe pm;
+		pm.validateArgs(ac, av);
 		pm.parseArgs(ac, av);
 	}
 	catch(const std::exception &e) {
