@@ -29,24 +29,108 @@ void PmergeMe::validateArgs(int ac, char **av) {
 	}
 }
 
+void PmergeMe::printPairVector() {
+	std::vector<std::pair<int, int> >::iterator it;
+	for (it = _v.begin(); it != _v.end(); ++it) {
+		std::cout << "(" << it->first << ", " << it->second << ")" << std::endl;
+	}
+}
+
+void printVector(std::vector<int> v) {
+	std::vector<int>::iterator it;
+	for (it = v.begin(); it != v.end(); it++) {
+		cout << *it << " ";
+	}
+}
+
+void PmergeMe::printBigestInPairVector() {
+	printVector(_biggest_in_pair);
+}
+
+void PmergeMe::define_biggest_in_pair() {
+	std::vector<std::pair<int, int> >::iterator it;
+	for(it = _v.begin(); it != _v.end(); ++it) {
+		if (it->first > it->second) {
+			_biggest_in_pair.push_back(it->first);
+		}
+		else {
+			_biggest_in_pair.push_back(it->second);
+		}
+	}
+}
+
 void PmergeMe::parseArgs(int ac, char **av) {
 	(void)ac;
 	(void)av;
 	int i = 1;
-//	while(av[i]) {
-//		cout << "<" << string(av[i]) << ">" << endl;
-//		i++;
-//	}
-//	exit(0);
 	while(av[i]) {
-		cout << "<" << av[i] << ">" << endl;
 		if (av[i] && av[i + 1]) {
-			unsigned av1 = stoul(std::string(av[i]));
-			unsigned av2 = stoul(std::string(av[i + 1]));
+			int av1 = atoi(av[i]);
+			int av2 = atoi(av[i + 1]);
 			_v.push_back(std::make_pair(av1, av2));
-			i++;
 		}
-		_v.push_back(std::make_pair(std::stoul(*av), -1));
+		else {
+			int last = atoi(av[i]);
+			_v.push_back(std::make_pair(last, -1));
+			break;
+		}
 		i += 2;
 	}
+}
+
+//merge sort
+
+std::vector<int> copyLeft(std::vector<int> vec) {
+	int arr[vec.size()];
+	size_t i = 0;
+	for (; i < vec.size() / 2; ++i) {
+		arr[i] = vec[i];
+	}
+
+	return std::vector<int>(arr, arr + i);
+}
+
+std::vector<int> copyRight(std::vector<int> vec) {
+	int arr[vec.size()];
+	size_t i = vec.size() / 2;
+	for (; i < vec.size(); ++i) {
+		arr[i] = vec[i];
+	}
+
+	return std::vector<int>(arr + vec.size() / 2, arr + i);
+}
+
+
+std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
+	unsigned long resIn = 0, leftIn = 0, rightIn = 0;
+
+	std::vector<int> res;
+
+	while (leftIn < left.size() && rightIn < right.size()) {
+		if (left[leftIn] < right[rightIn]) {
+			res[resIn++] = left[leftIn++];
+		}
+		else {
+			res[resIn++] = right[rightIn++];
+		}
+	}
+
+	while (resIn < res.size()) {
+		if (leftIn != left.size()) {
+			res[resIn++] = left[leftIn++];
+		}
+		else {
+			res[resIn++] = right[rightIn++];
+		}
+	}
+	printVector(res);
+	return res;
+}
+
+std::vector<int> mergeSort(std::vector<int> v) {
+		if (v.size() <= 1) { return v; }
+		std::vector<int> left = copyLeft(v);
+		std::vector<int> right = copyRight(v);
+
+		return merge(mergeSort(left), mergeSort(right));
 }
