@@ -2,6 +2,8 @@
 #define CPPMODULESPROJECT_PMERGEME_HPP
 
 #include "iostream"
+#include <cstring>
+#include <cstdlib>
 #include "exception"
 #include "vector"
 
@@ -27,7 +29,7 @@ public:
 	void printBigestInPairVector();
 	void printLowestInPairVector();
 	void create_sorted_n_2();
-	void insert_lowest();
+//	void insert_lowest();
 	//merge sort
 };
 
