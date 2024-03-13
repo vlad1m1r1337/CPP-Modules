@@ -41,10 +41,15 @@ void printVector(std::vector<int> v) {
 	for (it = v.begin(); it != v.end(); it++) {
 		cout << *it << " ";
 	}
+	cout << endl;
 }
 
 void PmergeMe::printBigestInPairVector() {
 	printVector(_biggest_in_pair);
+}
+
+void PmergeMe::printLowestInPairVector() {
+	printVector(_lowest_in_pair);
 }
 
 void PmergeMe::define_biggest_in_pair() {
@@ -52,9 +57,11 @@ void PmergeMe::define_biggest_in_pair() {
 	for(it = _v.begin(); it != _v.end(); ++it) {
 		if (it->first > it->second) {
 			_biggest_in_pair.push_back(it->first);
+			_lowest_in_pair.push_back(it->second);
 		}
 		else {
 			_biggest_in_pair.push_back(it->second);
+			_lowest_in_pair.push_back(it->first);
 		}
 	}
 }
@@ -100,30 +107,29 @@ std::vector<int> copyRight(std::vector<int> vec) {
 	return std::vector<int>(arr + vec.size() / 2, arr + i);
 }
 
-
 std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
-	unsigned long resIn = 0, leftIn = 0, rightIn = 0;
+	unsigned long leftIn = 0, rightIn = 0;
 
 	std::vector<int> res;
 
 	while (leftIn < left.size() && rightIn < right.size()) {
 		if (left[leftIn] < right[rightIn]) {
-			res[resIn++] = left[leftIn++];
+			res.push_back(left[leftIn++]);
 		}
 		else {
-			res[resIn++] = right[rightIn++];
+			res.push_back(right[rightIn++]);
 		}
 	}
 
-	while (resIn < res.size()) {
-		if (leftIn != left.size()) {
-			res[resIn++] = left[leftIn++];
-		}
-		else {
-			res[resIn++] = right[rightIn++];
-		}
+	while (leftIn < left.size()) {
+		res.push_back(left[leftIn]);
+		leftIn++;
 	}
-	printVector(res);
+
+	while (rightIn < right.size()) {
+		res.push_back(right[rightIn]);
+		rightIn++;
+	}
 	return res;
 }
 
@@ -133,4 +139,14 @@ std::vector<int> mergeSort(std::vector<int> v) {
 		std::vector<int> right = copyRight(v);
 
 		return merge(mergeSort(left), mergeSort(right));
+}
+
+void PmergeMe::create_sorted_n_2() {
+	_sorted_biggest = mergeSort(_biggest_in_pair);
+}
+
+void PmergeMe::insert_lowest() {
+	int smallest_among_large_ones = _biggest_in_pair[0];
+
+
 }
