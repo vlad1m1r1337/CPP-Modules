@@ -1,5 +1,0 @@
-# ninja log v5
-0	83	1699538439000000000	build.ninja	8a879518603601f2
-2	296	1699517500000000000	CMakeFiles/CPPModulesProject.dir/CPP01/ex03/main.cpp.o	367cc73afdc0caf
-1	314	1699517500000000000	CMakeFiles/CPPModulesProject.dir/CPP01/ex03/HumanA.cpp.o	5ac2dadcd2ff192a
-2	315	1699517500000000000	CMakeFiles/CPPModulesProject.dir/CPP01/ex03/Weapon.cpp.o	613d65112fd3c0c6

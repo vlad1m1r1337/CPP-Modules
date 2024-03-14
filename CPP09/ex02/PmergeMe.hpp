@@ -7,6 +7,7 @@
 #include "exception"
 #include "vector"
 #include <algorithm>
+#include <cmath>
 
 using std::cout;
 using std::endl;
@@ -18,6 +19,7 @@ private:
 	std::vector<int> _biggest_in_pair;
 	std::vector<int> _lowest_in_pair;
 	std::vector<int> _sorted_biggest;
+	std::vector<std::vector<int> > _grouped;
 public:
 	PmergeMe();
 	~PmergeMe();
@@ -35,12 +37,16 @@ public:
 	void insert_lowest();
     int find_pair(int smallest_among_large_ones);
 
-	//merge sort
+	//
+	void fill_sub_group(std::vector<int> v, int *pow, int *last);
+	void group_remaining();
 };
 
+	//merge sort
 	std::vector<int> copyLeft(std::vector<int> vec);
 	std::vector<int> copyRight(std::vector<int> vec);
 	std::vector<int> mergeSort(std::vector<int> v);
 	void printVector(std::vector<int> v);
+	void printVectorVector(std::vector<std::vector<int> > v);
 
 #endif

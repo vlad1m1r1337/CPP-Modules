@@ -10,8 +10,14 @@ int main(int ac, char **av) {
 			pm.define_biggest_in_pair();
 			pm.create_sorted_n_2();
 			pm.insert_lowest();
+			pm.group_remaining();
 		}
 	catch(const std::exception &e) {
 		cout << "Error" << endl;
 	}
 }
+
+
+//push in vector of vector some elements
+
+
