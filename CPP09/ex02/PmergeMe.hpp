@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include "exception"
 #include "vector"
+#include <algorithm>
 
 using std::cout;
 using std::endl;
@@ -28,8 +29,12 @@ public:
 	void define_biggest_in_pair();
 	void printBigestInPairVector();
 	void printLowestInPairVector();
+
 	void create_sorted_n_2();
-//	void insert_lowest();
+    void erase_in_lowest_pair(int pair);
+	void insert_lowest();
+    int find_pair(int smallest_among_large_ones);
+
 	//merge sort
 };
 

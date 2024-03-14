@@ -145,8 +145,32 @@ void PmergeMe::create_sorted_n_2() {
 	_sorted_biggest = mergeSort(_biggest_in_pair);
 }
 
-//void PmergeMe::insert_lowest() {
-//	int smallest_among_large_ones = _biggest_in_pair[0];
-//
-//
-//}
+int PmergeMe::find_pair(int smallest_among_large_ones) {
+    int pair;
+    std::vector< std::pair<int, int> >::iterator it;
+    for (it = _v.begin(); it < _v.end(); it++) {
+        if (it->first == smallest_among_large_ones && it->first > it->second) {
+            return it->second;
+        }
+        else if (it->second == smallest_among_large_ones && it->second > it->first) {
+            return it->first;
+        }
+    }
+    return 0;
+}
+
+void PmergeMe::erase_in_lowest_pair(int pair) {
+    std::vector<int>::iterator it = std::find(_lowest_in_pair.begin(), _lowest_in_pair.end(), pair);
+
+    int index = std::distance(_lowest_in_pair.begin(), it);
+    _lowest_in_pair.erase(_lowest_in_pair.begin() + index);
+}
+
+void PmergeMe::insert_lowest() {
+	int smallest_among_large_ones = _sorted_biggest[0];
+    int pair = find_pair(smallest_among_large_ones);
+    _sorted_biggest.insert(_sorted_biggest.begin(), pair);
+    printVector(_lowest_in_pair);
+    erase_in_lowest_pair(pair);
+    printVector(_lowest_in_pair);
+}
