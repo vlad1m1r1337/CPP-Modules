@@ -38,8 +38,13 @@ public:
     int find_pair(int smallest_among_large_ones);
 
 	//
-	void fill_sub_group(std::vector<int> v, int *pow, int *last);
+	int find_place_in_binary_search(int index);
+	std::vector<int> fill_sub_group(std::vector<int> v, int *pow, int *last);
 	void group_remaining();
+
+	// binary insertion sort
+	void insert_erase_binary(int *index);
+	void binary_insertion_sort();
 };
 
 	//merge sort

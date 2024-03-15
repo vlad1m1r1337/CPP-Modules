@@ -11,13 +11,9 @@ int main(int ac, char **av) {
 			pm.create_sorted_n_2();
 			pm.insert_lowest();
 			pm.group_remaining();
+			pm.binary_insertion_sort();
 		}
 	catch(const std::exception &e) {
 		cout << "Error" << endl;
 	}
 }
-
-
-//push in vector of vector some elements
-
-

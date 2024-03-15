@@ -169,45 +169,80 @@ void PmergeMe::insert_lowest() {
 	int smallest_among_large_ones = _sorted_biggest[0];
     int pair = find_pair(smallest_among_large_ones);
     _sorted_biggest.insert(_sorted_biggest.begin(), pair);
-//    printVector(_lowest_in_pair);
     erase_in_lowest_pair(pair);
-//    printVector(_lowest_in_pair);
 }
 
-void PmergeMe::fill_sub_group(std::vector<int> v, int *pow_of, int *last) {
+std::vector<int> PmergeMe::fill_sub_group(std::vector<int> v, int *pow_of, int *last) {
 	std::vector<int>::iterator it;
 
-	for (int i = 0; i < std::pow(2, *pow_of); i++) {
-		v.push_back(_lowest_in_pair[0]);
+	for (int i = 0; i < std::pow(2, *pow_of) - *last; i++) {
+		v.insert(v.begin(), _lowest_in_pair[0]);
 		_lowest_in_pair.erase(_lowest_in_pair.begin());
+		if (_lowest_in_pair.size() == 0) {break;}
 	}
-	(*pow_of)++;
 	(*last) = static_cast<int>(std::pow(2, *pow_of));
-	cout << "inner vector: ";
-	printVector(v);
-	cout << endl;
+	(*pow_of)++;
+	return v;
 }
 
-
 void PmergeMe::group_remaining() {
-	std::vector<std::vector<int> >::iterator it;
-	it = _grouped.begin();
-
 	int pow_of = 1;
 	int last = 0;
-	while (_grouped.size() < _lowest_in_pair.size()) {
-		it->reserve(10);
-		fill_sub_group(*it, &pow_of, &last);
+	std::vector<int> vt;
+	_grouped.push_back(vt);
+	while (_lowest_in_pair.size()) {
+		std::vector<std::vector<int> >::iterator it;
+		it = _grouped.begin();
+		std::vector<int> sub = fill_sub_group(*it, &pow_of, &last);
+		_grouped.push_back(sub);
 		it++;
 	}
-	cout << endl;
+	_grouped.erase(_grouped.begin());
+}
+
+int PmergeMe::find_place_in_binary_search(int index) {
+	return _grouped[0][0] > _sorted_biggest[index] && _grouped[0][0] < _sorted_biggest[index + 1];
+}
+
+void PmergeMe::insert_erase_binary(int *index) {
+	_sorted_biggest.insert(_sorted_biggest.begin() + *index, _grouped[0][0]);
+	_grouped[0].erase(_grouped[0].begin());
+	if (_grouped[0].size() == 0) {
+		_grouped.erase(_grouped.begin());
+	}
+	*index = (_sorted_biggest.size() - 1) / 2;
+}
+
+void PmergeMe::binary_insertion_sort() {
+	printVector(_sorted_biggest);
 	printVectorVector(_grouped);
-	cout << endl;
+
+	int index = (_sorted_biggest.size() - 1) / 2;
+	while(!_grouped.empty()) {
+		if (find_place_in_binary_search(index)) {
+			insert_erase_binary(&index);
+		}
+		if (_grouped[0][0] > _sorted_biggest[index]) {
+			index = index * 3 / 2;
+			if (index + 1 == _sorted_biggest.size()) {
+				insert_erase_binary(&index);
+			}
+		}
+		else if (_grouped[0][0] < _sorted_biggest[index]) {
+			index /= 2;
+			if (!index) {
+				insert_erase_binary(&index);
+			}
+		}
+	}
+	cout << "Sorted: ";
+	printVector(_sorted_biggest);
 }
 
 void printVectorVector(std::vector<std::vector<int> > v) {
 	std::vector<std::vector<int> >::iterator it;
 	for (it = v.begin(); it != v.end(); it++) {
 		printVector(*it);
+		cout << endl;
 	}
 }
