@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include "exception"
 #include "vector"
+#include "deque"
 #include <algorithm>
 #include <cmath>
 #include "ctime"
@@ -23,12 +24,21 @@ private:
 	std::vector<std::vector<int> > _grouped;
 
     clock_t _vector_time_start;
+
+    std::deque<std::pair<int, int > > _d;
+    std::deque<int> _d_biggest_in_pair;
+    std::deque<int> _d_lowest_in_pair;
+    std::deque<int> _d_sorted_biggest;
+    std::deque<std::deque<int> > _d_grouped;
+
+    clock_t _deque_time_start;
 public:
 	PmergeMe();
 	~PmergeMe();
 	PmergeMe(const PmergeMe &src);
 	PmergeMe &operator=(const PmergeMe &src);
 	void validateArgs(int ac, char **av);
+
 	void parseArgs(int ac, char **av);
 	void printPairVector();
     void printPairVectorWithoutMinusOne();
@@ -54,12 +64,36 @@ public:
     void output_result();
 
     //deque
+    void d_parseArgs(int ac, char **av);
+    void d_printPairVector();
+    void d_printPairVectorWithoutMinusOne();
+    void d_define_biggest_in_pair();
+    void d_printBigestInPairVector();
+    void d_printLowestInPairVector();
+
+    void d_create_sorted_n_2();
+    void d_erase_in_lowest_pair(int pair);
+    void d_insert_lowest();
+    int d_find_pair(int smallest_among_large_ones);
+
+    //
+    int d_find_place_in_binary_search(int index);
+    std::deque<int> d_fill_sub_group(std::deque<int> v, int *pow, int *last);
+    void d_group_remaining();
+
+    // binary insertion sort
+    void d_insert_erase_binary(int *index);
+    void d_binary_insertion_sort();
+
+    //output
+    void d_output_result();
+
 };
 
 	//merge sort
-	std::vector<int> copyLeft(std::vector<int> vec);
-	std::vector<int> copyRight(std::vector<int> vec);
-	std::vector<int> mergeSort(std::vector<int> v);
+//	std::vector<int> copyLeft(std::vector<int> vec);
+//	std::vector<int> copyRight(std::vector<int> vec);
+//	std::vector<int> mergeSort(std::vector<int> v);
 	void printVector(std::vector<int> v);
 	void printVectorVector(std::vector<std::vector<int> > v);
 
