@@ -12,6 +12,7 @@ int main(int ac, char **av) {
 			pm.insert_lowest();
 			pm.group_remaining();
 			pm.binary_insertion_sort();
+            pm.output_result();
 		}
 	catch(const std::exception &e) {
 		cout << "Error" << endl;

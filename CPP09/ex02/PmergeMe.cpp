@@ -32,9 +32,26 @@ void PmergeMe::validateArgs(int ac, char **av) {
 void PmergeMe::printPairVector() {
 	std::vector<std::pair<int, int> >::iterator it;
 	for (it = _v.begin(); it != _v.end(); ++it) {
-		std::cout << "(" << it->first << ", " << it->second << ")" << std::endl;
+		std::cout << it->first << " " << it->second << " ";
 	}
+    cout << endl;
 }
+
+void PmergeMe::printPairVectorWithoutMinusOne() {
+    std::vector<std::pair<int, int> >::iterator it;
+    it = _v.begin();
+    for (; it != _v.end() - 1; ++it) {
+        std::cout << it->first << " " << it->second << " ";
+    }
+    cout << it->first;
+    if (it->second == -1) {
+        cout << endl;
+    }
+    else {
+        cout << " " << it->second << endl;
+    }
+}
+
 
 void printVector(std::vector<int> v) {
 	std::vector<int>::iterator it;
@@ -53,6 +70,7 @@ void PmergeMe::printLowestInPairVector() {
 }
 
 void PmergeMe::define_biggest_in_pair() {
+    _vector_time_start = clock();
 	std::vector<std::pair<int, int> >::iterator it;
 	for(it = _v.begin(); it != _v.end(); ++it) {
 		if (it->first > it->second) {
@@ -214,29 +232,37 @@ void PmergeMe::insert_erase_binary(int *index) {
 }
 
 void PmergeMe::binary_insertion_sort() {
-	printVector(_sorted_biggest);
-	printVectorVector(_grouped);
-
 	int index = (_sorted_biggest.size() - 1) / 2;
 	while(!_grouped.empty()) {
 		if (find_place_in_binary_search(index)) {
 			insert_erase_binary(&++index);
 		}
 		if (_grouped[0][0] > _sorted_biggest[index]) {
-            index = static_cast<int>(index + ((_sorted_biggest.size() - 1) - index) / 2);
+            index++;
 			if (static_cast<long unsigned int>(index + 1) == _sorted_biggest.size()) {
 				insert_erase_binary(&index);
 			}
 		}
 		else if (_grouped[0][0] < _sorted_biggest[index]) {
-			index /= 2;
-			if (!index) {
+			index--;
+			if (index == -1) {
+                index++;
 				insert_erase_binary(&index);
 			}
 		}
 	}
-	cout << "Sorted: ";
-	printVector(_sorted_biggest);
+    if (_sorted_biggest[0] == -1) {
+        _sorted_biggest.erase(_sorted_biggest.begin());
+    }
+}
+
+void PmergeMe::output_result() {
+    cout << "Before: ";
+    printPairVectorWithoutMinusOne();
+    cout << "After: ";
+    printVector(_sorted_biggest);
+    double time = (double)(clock() - _vector_time_start) / CLOCKS_PER_SEC;
+    cout << "Time to process: " << time << " s" << endl;
 }
 
 void printVectorVector(std::vector<std::vector<int> > v) {
@@ -247,5 +273,5 @@ void printVectorVector(std::vector<std::vector<int> > v) {
 	}
 }
 
-//123 56 78 5  6 45 99 0 34 98 113 111232 32 6
-//123 56 78 5 6 45 99 0
+//deque
+

@@ -8,6 +8,7 @@
 #include "vector"
 #include <algorithm>
 #include <cmath>
+#include "ctime"
 
 using std::cout;
 using std::endl;
@@ -20,6 +21,8 @@ private:
 	std::vector<int> _lowest_in_pair;
 	std::vector<int> _sorted_biggest;
 	std::vector<std::vector<int> > _grouped;
+
+    clock_t _vector_time_start;
 public:
 	PmergeMe();
 	~PmergeMe();
@@ -28,6 +31,7 @@ public:
 	void validateArgs(int ac, char **av);
 	void parseArgs(int ac, char **av);
 	void printPairVector();
+    void printPairVectorWithoutMinusOne();
 	void define_biggest_in_pair();
 	void printBigestInPairVector();
 	void printLowestInPairVector();
@@ -45,6 +49,11 @@ public:
 	// binary insertion sort
 	void insert_erase_binary(int *index);
 	void binary_insertion_sort();
+
+    //output
+    void output_result();
+
+    //deque
 };
 
 	//merge sort
