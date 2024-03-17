@@ -201,7 +201,7 @@ void PmergeMe::group_remaining() {
 }
 
 int PmergeMe::find_place_in_binary_search(int index) {
-	return _grouped[0][0] > _sorted_biggest[index] && _grouped[0][0] < _sorted_biggest[index + 1];
+	return _grouped[0][0] >= _sorted_biggest[index] && _grouped[0][0] <= _sorted_biggest[index + 1];
 }
 
 void PmergeMe::insert_erase_binary(int *index) {
@@ -220,11 +220,11 @@ void PmergeMe::binary_insertion_sort() {
 	int index = (_sorted_biggest.size() - 1) / 2;
 	while(!_grouped.empty()) {
 		if (find_place_in_binary_search(index)) {
-			insert_erase_binary(&index);
+			insert_erase_binary(&++index);
 		}
 		if (_grouped[0][0] > _sorted_biggest[index]) {
-			index = index * 3 / 2;
-			if (index + 1 == _sorted_biggest.size()) {
+            index = static_cast<int>(index + ((_sorted_biggest.size() - 1) - index) / 2);
+			if (static_cast<long unsigned int>(index + 1) == _sorted_biggest.size()) {
 				insert_erase_binary(&index);
 			}
 		}
@@ -246,3 +246,6 @@ void printVectorVector(std::vector<std::vector<int> > v) {
 		cout << endl;
 	}
 }
+
+//123 56 78 5  6 45 99 0 34 98 113 111232 32 6
+//123 56 78 5 6 45 99 0
