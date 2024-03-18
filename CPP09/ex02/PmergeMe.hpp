@@ -24,6 +24,7 @@ private:
 	std::vector<std::vector<int> > _grouped;
 
     clock_t _vector_time_start;
+    double _v_duration;
 
     std::deque<std::pair<int, int > > _d;
     std::deque<int> _d_biggest_in_pair;
@@ -32,6 +33,7 @@ private:
     std::deque<std::deque<int> > _d_grouped;
 
     clock_t _deque_time_start;
+    double _d_duration;
 public:
 	PmergeMe();
 	~PmergeMe();
@@ -76,6 +78,8 @@ public:
     void d_insert_lowest();
     int d_find_pair(int smallest_among_large_ones);
 
+    void printPairDequeWithoutMinusOne();
+
     //
     int d_find_place_in_binary_search(int index);
     std::deque<int> d_fill_sub_group(std::deque<int> v, int *pow, int *last);
@@ -91,9 +95,6 @@ public:
 };
 
 	//merge sort
-//	std::vector<int> copyLeft(std::vector<int> vec);
-//	std::vector<int> copyRight(std::vector<int> vec);
-//	std::vector<int> mergeSort(std::vector<int> v);
 	void printVector(std::vector<int> v);
 	void printVectorVector(std::vector<std::vector<int> > v);
 

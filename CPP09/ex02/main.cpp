@@ -6,12 +6,13 @@ int main(int ac, char **av) {
 	try {
 			PmergeMe pm;
 			pm.validateArgs(ac, av);
-//			pm.parseArgs(ac, av);
-//			pm.define_biggest_in_pair();
-//			pm.create_sorted_n_2();
-//			pm.insert_lowest();
-//			pm.group_remaining();
-//			pm.binary_insertion_sort();
+
+			pm.parseArgs(ac, av);
+			pm.define_biggest_in_pair();
+			pm.create_sorted_n_2();
+			pm.insert_lowest();
+			pm.group_remaining();
+			pm.binary_insertion_sort();
 //            pm.output_result();
 
             pm.d_parseArgs(ac, av);
