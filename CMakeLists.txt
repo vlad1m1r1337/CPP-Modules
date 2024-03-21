@@ -4,6 +4,6 @@ project(CPPModulesProject)
 set(CMAKE_CXX_STANDARD 98)
 
 add_executable(CPPModulesProject
-        CPP09/ex02/main.cpp
-        CPP09/ex02/PmergeMe.cpp
+        CPP09/ex01/RPN.cpp
+        CPP09/ex01/main.cpp
 )

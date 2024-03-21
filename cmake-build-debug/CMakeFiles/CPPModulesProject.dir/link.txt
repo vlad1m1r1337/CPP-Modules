@@ -1,0 +1,3 @@
+"D:\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\CPPModulesProject.dir/objects.a
+"D:\CLion 2023.2.2\bin\mingw\bin\ar.exe" qc CMakeFiles\CPPModulesProject.dir/objects.a @CMakeFiles\CPPModulesProject.dir\objects1.rsp
+"D:\CLion 2023.2.2\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\CPPModulesProject.dir/objects.a -Wl,--no-whole-archive -o CPPModulesProject.exe -Wl,--out-implib,libCPPModulesProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CPPModulesProject.dir\linkLibs.rsp
