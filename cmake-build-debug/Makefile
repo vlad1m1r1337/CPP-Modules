@@ -128,53 +128,53 @@ CPPModulesProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/build
 .PHONY : CPPModulesProject/fast
 
-CPP09/ex01/RPN.obj: CPP09/ex01/RPN.cpp.obj
-.PHONY : CPP09/ex01/RPN.obj
+CPP09/ex02/PmergeMe.obj: CPP09/ex02/PmergeMe.cpp.obj
+.PHONY : CPP09/ex02/PmergeMe.obj
 
 # target to build an object file
-CPP09/ex01/RPN.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/RPN.cpp.obj
-.PHONY : CPP09/ex01/RPN.cpp.obj
+CPP09/ex02/PmergeMe.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.obj
+.PHONY : CPP09/ex02/PmergeMe.cpp.obj
 
-CPP09/ex01/RPN.i: CPP09/ex01/RPN.cpp.i
-.PHONY : CPP09/ex01/RPN.i
+CPP09/ex02/PmergeMe.i: CPP09/ex02/PmergeMe.cpp.i
+.PHONY : CPP09/ex02/PmergeMe.i
 
 # target to preprocess a source file
-CPP09/ex01/RPN.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/RPN.cpp.i
-.PHONY : CPP09/ex01/RPN.cpp.i
+CPP09/ex02/PmergeMe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.i
+.PHONY : CPP09/ex02/PmergeMe.cpp.i
 
-CPP09/ex01/RPN.s: CPP09/ex01/RPN.cpp.s
-.PHONY : CPP09/ex01/RPN.s
+CPP09/ex02/PmergeMe.s: CPP09/ex02/PmergeMe.cpp.s
+.PHONY : CPP09/ex02/PmergeMe.s
 
 # target to generate assembly for a file
-CPP09/ex01/RPN.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/RPN.cpp.s
-.PHONY : CPP09/ex01/RPN.cpp.s
+CPP09/ex02/PmergeMe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.s
+.PHONY : CPP09/ex02/PmergeMe.cpp.s
 
-CPP09/ex01/main.obj: CPP09/ex01/main.cpp.obj
-.PHONY : CPP09/ex01/main.obj
+CPP09/ex02/main.obj: CPP09/ex02/main.cpp.obj
+.PHONY : CPP09/ex02/main.obj
 
 # target to build an object file
-CPP09/ex01/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/main.cpp.obj
-.PHONY : CPP09/ex01/main.cpp.obj
+CPP09/ex02/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.obj
+.PHONY : CPP09/ex02/main.cpp.obj
 
-CPP09/ex01/main.i: CPP09/ex01/main.cpp.i
-.PHONY : CPP09/ex01/main.i
+CPP09/ex02/main.i: CPP09/ex02/main.cpp.i
+.PHONY : CPP09/ex02/main.i
 
 # target to preprocess a source file
-CPP09/ex01/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/main.cpp.i
-.PHONY : CPP09/ex01/main.cpp.i
+CPP09/ex02/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.i
+.PHONY : CPP09/ex02/main.cpp.i
 
-CPP09/ex01/main.s: CPP09/ex01/main.cpp.s
-.PHONY : CPP09/ex01/main.s
+CPP09/ex02/main.s: CPP09/ex02/main.cpp.s
+.PHONY : CPP09/ex02/main.s
 
 # target to generate assembly for a file
-CPP09/ex01/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex01/main.cpp.s
-.PHONY : CPP09/ex01/main.cpp.s
+CPP09/ex02/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPModulesProject.dir\build.make CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.s
+.PHONY : CPP09/ex02/main.cpp.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CPPModulesProject
-	@echo ... CPP09/ex01/RPN.obj
-	@echo ... CPP09/ex01/RPN.i
-	@echo ... CPP09/ex01/RPN.s
-	@echo ... CPP09/ex01/main.obj
-	@echo ... CPP09/ex01/main.i
-	@echo ... CPP09/ex01/main.s
+	@echo ... CPP09/ex02/PmergeMe.obj
+	@echo ... CPP09/ex02/PmergeMe.i
+	@echo ... CPP09/ex02/PmergeMe.s
+	@echo ... CPP09/ex02/main.obj
+	@echo ... CPP09/ex02/main.i
+	@echo ... CPP09/ex02/main.s
 .PHONY : help
 
 

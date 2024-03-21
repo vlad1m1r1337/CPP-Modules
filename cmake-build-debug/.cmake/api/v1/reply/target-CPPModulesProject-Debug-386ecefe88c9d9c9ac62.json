@@ -100,13 +100,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP09/ex01/RPN.cpp",
+			"path" : "CPP09/ex02/PmergeMe.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP09/ex01/main.cpp",
+			"path" : "CPP09/ex02/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

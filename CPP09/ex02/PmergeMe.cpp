@@ -442,8 +442,10 @@ void PmergeMe::d_binary_insertion_sort() {
     if (_d_sorted_biggest[0] == -1) {
         _d_sorted_biggest.erase(_d_sorted_biggest.begin());
     }
+    if (_d_sorted_biggest[0] == -1) {
+        _d_sorted_biggest.erase(_d_sorted_biggest.begin());
+    }
     _d_duration = (std::clock() - _deque_time_start)/(double)CLOCKS_PER_SEC;
-//    cout << "_deque_time_end: " << (_deque_time_end) / (double)(CLOCKS_PER_SEC) << endl;
 }
 
 void printDeque(std::deque<int> d) {
