@@ -47,7 +47,16 @@ void BitcoinExchange::parse_data(char *argv) {
 			std::getline(ss, value, '|');
 
 			key = trim(key);
+			if (key.length() != 10) {
+				std::cout << "Error: key is not valid." << std::endl;
+				continue;
+			}
+
 			value = trim(value);
+			if ((std::count(value.begin(), value.end(), '.')) > 1) {
+				std::cout << "Error: value is not valid." << std::endl;
+				continue;
+			}
 			if (!key.length() || !value.length()) {
 				std::cout << "Error: key or value is empty." << std::endl;
 				continue;
@@ -232,7 +241,6 @@ int	size_check(const char *str)
 	}
 	return 1;
 }
-
 
 //trim functions
 bool IsNotSpace(char ch) {
