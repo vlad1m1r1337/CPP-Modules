@@ -9,7 +9,6 @@ int main(int argc, char** argv) {
 		RPN rpn;
 		rpn.calculate(argv[1]);
 		rpn.printResult();
-		//		rpn.printStack();
 	} catch (const std::exception& e) {
 		cout << "Error" << endl;
 	}

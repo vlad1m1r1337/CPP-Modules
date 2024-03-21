@@ -75,13 +75,15 @@ void non_existing_date(string key, string value, std::map<string, double> data_c
 		if (year_from_data == year_input) {
 			if (month_from_data == month_input) {
 				if (day_input < day_from_data) {
-					cout << (--it)->first << " => " << value << " => " << temp * atof(value.c_str()) << endl;
-					break;
+					cout << key << " => " << value << " => " << temp * atof(value.c_str()) << endl;
+					return;
 				}
 			}
 		}
 		temp = it->second;
 	}
+    std::map<string, double>::reverse_iterator rit = data_csv.rbegin();
+    cout << key << " => " << value << " => " << rit->second * atof(value.c_str()) << endl;
 }
 
 void	fill_data_map(std::ifstream &file, std::map<string, double> *data_csv) {
@@ -120,13 +122,16 @@ void	output(string key, string value) {
 }
 
 void BitcoinExchange::parse_key_value(string key, string value) {
+    if (value[value.length() - 1] == 'f') {
+        value = value.substr(0, value.length() - 1);
+    }
 	if (value[0] == '-') {
 		std::cout << "Error: not a positive number." << std::endl;
 	}
 	else if (validate_date(key) == 0) {
 		std::cout << "Error: bad input => " << key << std::endl;
 	}
-	else if (value.find_first_not_of(".0123456789") != std::string::npos) {
+	else if (value.find_first_not_of(".0123456789") != std::string::npos || value[0] == '.') {
 		std::cout << "Error: value is not a number." << std::endl;
 	}
 	else if (size_check(value.c_str()) == 0) {
@@ -167,6 +172,9 @@ int validate_lap_year(string year, string month, string day) {
 }
 
 int validate_date(string date) {
+    if (date[7] != '-' || date[4] != '-') {
+        return 0;
+    }
 	size_t first_dash = date.find("-");
 
 	string year = date.substr(0, first_dash);

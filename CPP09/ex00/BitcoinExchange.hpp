@@ -6,6 +6,7 @@
 #include <fstream>
 #include <sstream>
 #include <stdlib.h>
+#include <algorithm>
 
 using std::cout;
 using std::endl;

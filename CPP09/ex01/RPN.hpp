@@ -7,6 +7,7 @@
 #include <cctype>
 #include <exception>
 #include <string>
+#include <cstdlib>
 
 using std::cout;
 using std::endl;

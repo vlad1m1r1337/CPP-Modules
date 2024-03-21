@@ -147,7 +147,6 @@ void PmergeMe::printLowestInPairVector() {
 
 void PmergeMe::define_biggest_in_pair() {
     _vector_time_start = clock();
-    cout << "_vector_time_start: " << (_vector_time_start) / (double)(CLOCKS_PER_SEC) << endl;
 	std::vector<std::pair<int, int> >::iterator it;
 	for(it = _v.begin(); it != _v.end(); ++it) {
 		if (it->first > it->second) {
@@ -276,17 +275,8 @@ void PmergeMe::binary_insertion_sort() {
         _sorted_biggest.erase(_sorted_biggest.begin());
     }
     _v_duration = (std::clock() - _vector_time_start)/(double)CLOCKS_PER_SEC;
-//    cout << "_vector_time_end: " << (_vector_time_end) / (double)(CLOCKS_PER_SEC) << endl;
 }
 
-//void PmergeMe::output_result() {
-//    cout << "Before: ";
-//    printPairVectorWithoutMinusOne();
-//    cout << "After: ";
-//    printVector(_sorted_biggest);
-//    double time = (clock() - _vector_time_start) / (double)(CLOCKS_PER_SEC);
-//    cout << "Time to process with std::vector: " << time << " s" << endl;
-//}
 
 //deque
 
@@ -323,7 +313,6 @@ void PmergeMe::d_printLowestInPairVector() {
 
 void PmergeMe::d_define_biggest_in_pair() {
     _deque_time_start = clock();
-    cout << "_deque_time_start: " << (_deque_time_start) / (double)(CLOCKS_PER_SEC) << endl;
     std::deque<std::pair<int, int> >::iterator it;
     for(it = _d.begin(); it != _d.end(); ++it) {
         if (it->first > it->second) {
@@ -486,9 +475,7 @@ void PmergeMe::d_output_result() {
     printPairDequeWithoutMinusOne();
     cout << "After: ";
     printDeque(_d_sorted_biggest);
-//    double time_v = (_vector_time_end - _vector_time_start) / (double)(CLOCKS_PER_SEC);
-    cout << "Time to process with std::vector: " << _v_duration << " s" << endl;
-//    double time_d = (_deque_time_end - _deque_time_start) / (double)(CLOCKS_PER_SEC);
-    cout << "Time to process with std::deque: " << _d_duration << " s" << endl;
+    cout << "Time to process with std::vector: " << _v_duration * 1000000 << " us" << endl;
+    cout << "Time to process with std::deque: " << _d_duration * 1000000 << " us" << endl;
 }
 

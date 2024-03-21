@@ -52,30 +52,51 @@ void RPN::calculate(char* str) {
 	while (getline(input_stringstream,parsed,' ')) {
 		parse_symbol(parsed);
 		int symbol;
-		if (symbol = define_sign(parsed)) {
+		if ((symbol = define_sign(parsed))) {
 			if (_stack.empty()) {throw std::exception();}
+
+            if (_stack.empty()) {
+                throw std::exception();
+            }
+
 			double num1 = atof(_stack.top().c_str());
 			_stack.pop();
+
+            if (_stack.empty()) {
+                throw std::exception();
+            }
 			double num2 = atof(_stack.top().c_str());
 			_stack.pop();
+
+            double res;
+            std::ostringstream oss;
+            std::string res_str;
+
 			switch (symbol) {
-				double res;
 				case PLUS:
 					res = num2 + num1;
-					_stack.push(std::to_string(res));
+                    oss << res;
+                    res_str = oss.str();
+					_stack.push(res_str);
 					break;
 				case MINUS:
 					res = num2 - num1;
-					_stack.push(std::to_string(res));
+                    oss << res;
+                    res_str = oss.str();
+                    _stack.push(res_str);
 					break;
 				case MULT:
 					res = num2 * num1;
-					_stack.push(std::to_string(res));
+                    oss << res;
+                    res_str = oss.str();
+                    _stack.push(res_str);
 					break;
 				case DIVIDE:
 					if (!num1) {throw std::exception();}
 					res = num2 / num1;
-					_stack.push(std::to_string(res));
+                    oss << res;
+                    res_str = oss.str();
+                    _stack.push(res_str);
 					break;
 			}
 		}
@@ -83,4 +104,7 @@ void RPN::calculate(char* str) {
 			_stack.push(parsed);
 		}
 	}
+    if (_stack.size() != 1) {
+        throw std::exception();
+    }
 }
