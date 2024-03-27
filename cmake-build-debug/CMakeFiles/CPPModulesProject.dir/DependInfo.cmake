@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP09/ex02/PmergeMe.cpp" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.obj.d"
-  "C:/Users/Hasan/OneDrive/CPP-Modules/CPP09/ex02/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.obj" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.obj.d"
+  "/Users/vgribkov/Desktop/CPP_Modules/CPP09/ex02/PmergeMe.cpp" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/PmergeMe.cpp.o.d"
+  "/Users/vgribkov/Desktop/CPP_Modules/CPP09/ex02/main.cpp" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.o" "gcc" "CMakeFiles/CPPModulesProject.dir/CPP09/ex02/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
