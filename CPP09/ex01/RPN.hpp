@@ -35,6 +35,6 @@ public:
 	void printResult() const;
 	void printStack() const;
 };
-
+std::string trim(const std::string& str);
 
 #endif

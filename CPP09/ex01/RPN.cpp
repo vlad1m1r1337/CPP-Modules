@@ -50,6 +50,7 @@ void RPN::calculate(char* str) {
 	string parsed;
 	std::stringstream input_stringstream(str);
 	while (getline(input_stringstream,parsed,' ')) {
+		if (parsed.length() == 0) { continue;}
 		parse_symbol(parsed);
 		int symbol;
 		if ((symbol = define_sign(parsed))) {
@@ -107,4 +108,26 @@ void RPN::calculate(char* str) {
     if (_stack.size() != 1) {
         throw std::exception();
     }
+}
+
+//trim functions
+bool IsNotSpace(char ch) {
+	return !std::isspace(ch);
+}
+
+std::string ltrim(const std::string& str) {
+	std::string result = str;
+	result.erase(result.begin(), std::find_if(result.begin(), result.end(), IsNotSpace));
+	return result;
+}
+
+
+std::string rtrim(const std::string& str) {
+	std::string result = str;
+	result.erase(std::find_if(result.rbegin(), result.rend(), IsNotSpace).base(), result.end());
+	return result;
+}
+
+std::string trim(const std::string& str) {
+	return rtrim(ltrim(str));
 }

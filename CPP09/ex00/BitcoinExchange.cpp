@@ -81,6 +81,11 @@ void non_existing_date(string key, string value, std::map<string, double> data_c
 		if (it == data_csv.begin()) {
 			temp = it->second;
 		}
+		if (date > key) {
+			it--;
+			cout << key << " => " << value << " => " << it->second * atof(value.c_str()) << endl;
+			return ;
+		}
 		if (year_from_data == year_input) {
 			if (month_from_data == month_input) {
 				if (day_input < day_from_data) {
@@ -252,7 +257,6 @@ std::string ltrim(const std::string& str) {
 	result.erase(result.begin(), std::find_if(result.begin(), result.end(), IsNotSpace));
 	return result;
 }
-
 
 std::string rtrim(const std::string& str) {
 	std::string result = str;

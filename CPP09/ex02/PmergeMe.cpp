@@ -373,9 +373,9 @@ void PmergeMe::d_erase_in_lowest_pair(int pair) {
 
 void PmergeMe::d_insert_lowest() {
     int smallest_among_large_ones = _d_sorted_biggest[0];
-    int pair = find_pair(smallest_among_large_ones);
+    int pair = d_find_pair(smallest_among_large_ones);
     _d_sorted_biggest.insert(_d_sorted_biggest.begin(), pair);
-    erase_in_lowest_pair(pair);
+    d_erase_in_lowest_pair(pair);
 }
 
 std::deque<int> PmergeMe::d_fill_sub_group(std::deque<int> v, int *pow_of, int *last) {
@@ -425,7 +425,7 @@ void PmergeMe::d_binary_insertion_sort() {
         if (d_find_place_in_binary_search(index)) {
             d_insert_erase_binary(&++index);
         }
-        if (_d_grouped[0][0] > _d_sorted_biggest[index]) {
+        else if (_d_grouped[0][0] > _d_sorted_biggest[index]) {
             index++;
             if (static_cast<long unsigned int>(index + 1) == _d_sorted_biggest.size()) {
                 d_insert_erase_binary(&index);
